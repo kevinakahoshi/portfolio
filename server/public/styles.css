@@ -5,8 +5,8 @@ body {
 
 * {
   box-sizing: border-box;
-  font-size: 1rem;
   font-family: 'Rubik', sans-serif;
+  font-size: 1rem;
 }
 
 h3 {
@@ -25,7 +25,6 @@ a {
   display: inline-block;
   position: relative;
   transition: all .3s ease-in-out;
-  font-size: 1.5rem;
 }
 
 a:hover {
@@ -40,7 +39,6 @@ a::after {
   bottom: 0;
   left: 0;
   right: 0;
-  top: 30px;
   margin: 0 auto;
   height: 5px;
   width: 100%;
@@ -58,28 +56,4 @@ a::after {
 a:hover::after {
   width: 100%;
   transition: all .3s ease-in-out;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
-.container {
-  padding: 100px 20px;
-}
-
-.inner {
-  width: 80%;
-  margin: auto;
-  display: grid;
-  grid-template-columns: 50% repeat(1, 2fr);
-  grid-gap: 20px;
-}
-
-@media (max-width: 979px) {
-  .inner {
-    width: 100%;
-    grid-template-columns: none;
-  }
 }
