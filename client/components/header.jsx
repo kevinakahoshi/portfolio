@@ -26,8 +26,8 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div>
-        <Container fluid={true} className="py-3 shadow-lg sticky-top">
+      <>
+        <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
           <Navbar color="faded" light expand="md" className="row">
             <NavbarBrand href="/">
             Kevin Akahoshi
@@ -51,7 +51,7 @@ class Header extends React.Component {
             </Collapse>
           </Navbar>
         </Container>
-      </div>
+      </>
     );
   }
 }
