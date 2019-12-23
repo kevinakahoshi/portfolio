@@ -1,7 +1,18 @@
 import React from 'react';
+import {
+  Container
+  // Row,
+  // Col
+} from 'reactstrap';
 
 function AboutMe() {
-  return <div></div>;
+  return (
+    <div className="bg-light">
+      <Container fluid>
+
+      </Container>
+    </div>
+  );
 }
 
 export default AboutMe;

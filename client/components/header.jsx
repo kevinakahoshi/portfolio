@@ -28,7 +28,7 @@ class Header extends React.Component {
     return (
       <div>
         <Container fluid={true} className="py-3 shadow-lg sticky-top">
-          <Navbar color="faded" light expand="md">
+          <Navbar color="faded" light expand="md" className="row">
             <NavbarBrand href="/">
             Kevin Akahoshi
             </NavbarBrand>
