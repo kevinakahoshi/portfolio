@@ -16,7 +16,6 @@ class App extends React.Component {
         <Header />
         <Hero />
         <AboutMe />
-        <AboutMe />
       </>
     );
   }

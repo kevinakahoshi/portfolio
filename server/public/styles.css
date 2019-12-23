@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 87px;
+}
+
 body {
   margin: 0 0 0 0;
   font-size: 0;
@@ -18,14 +23,12 @@ body {
   background-image: linear-gradient(-45deg, #FFAE8F90, #FF677D90, #CD668490, #6F5A7E90), url('./images/Topographic-Map-Pattern-7.png');
 }
 
-h3 {
-  font-size: 2rem;
+.about-section {
+  padding: 100px 0px;
 }
 
-p {
-  font-size: 1.5rem;
-  line-height: 2rem;
-  font-weight: 300;
+h3 {
+  font-size: 2rem;
 }
 
 a {

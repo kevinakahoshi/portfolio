@@ -8,12 +8,11 @@ import {
 
 function Hero() {
   return (
-    <div className="main-hero d-flex">
+    <div className="main-hero d-flex bg-white">
       <Container className="m-auto" fluid>
         <Row>
-          <Col md="2" />
-          <Col md="4" className="d-flex order-2 order-sm-1">
-            <div className="my-auto py-5">
+          <Col md="6" className="d-flex order-2 order-sm-1">
+            <div className="m-auto py-5">
               <h1 className="">Kevin Akahoshi</h1>
               <h3 className="text-muted">Full Stack Developer</h3>
               <Button outline color="secondary">
