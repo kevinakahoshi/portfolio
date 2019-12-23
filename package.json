@@ -5,7 +5,8 @@
   "description": "Simple and clean portfolio website.",
   "scripts": {
     "build": "webpack --mode=production",
-    "dev": "npm-run-all --silent --parallel dev:*"
+    "dev": "npm-run-all --silent --parallel dev:*",
+    "dev:client": "webpack-dev-server"
   },
   "husky": {
     "hooks": {
@@ -19,8 +20,11 @@
     ]
   },
   "dependencies": {
+    "bootstrap": "^4.4.1",
     "react": "16.12.0",
-    "react-dom": "16.12.0"
+    "react-dom": "16.12.0",
+    "react-transition-group": "^4.3.0",
+    "reactstrap": "^8.2.0"
   },
   "devDependencies": {
     "@babel/core": "7.7.2",
@@ -34,10 +38,10 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "7.16.0",
     "eslint-plugin-standard": "4.0.1",
-    "husky": "3.0.9",
+    "husky": "^3.0.9",
     "lint-staged": "9.4.3",
     "npm-run-all": "4.1.5",
-    "webpack": "4.41.2",
+    "webpack": "^4.41.2",
     "webpack-cli": "3.3.10",
     "webpack-dev-server": "3.9.0"
   },
@@ -96,13 +100,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kevinakahoshi/coffeine-supply-co.git"
+    "url": "git+https://github.com/kevinakahoshi/portfolio.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/kevinakahoshi/coffeine-supply-co/issues"
+    "url": "https://github.com/kevinakahoshi/portfolio/issues"
   },
-  "homepage": "https://github.com/kevinakahoshi/coffeine-supply-co#readme"
+  "homepage": "https://github.com/kevinakahoshi/portfolio/issues#readme"
 }
