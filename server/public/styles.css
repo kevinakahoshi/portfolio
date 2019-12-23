@@ -9,6 +9,15 @@ body {
   font-size: 1rem;
 }
 
+.main-hero {
+  min-height: 75vh;
+}
+
+.hero-graphic {
+  min-height: 90vh;
+  background-image: linear-gradient(-45deg, #FFAE8F90, #FF677D90, #CD668490, #6F5A7E90), url('./images/Topographic-Map-Pattern-7.png');
+}
+
 h3 {
   font-size: 2rem;
 }
@@ -56,4 +65,10 @@ a::after {
 a:hover::after {
   width: 100%;
   transition: all .3s ease-in-out;
+}
+
+@media (max-width: 767px) {
+  .hero-graphic {
+    min-height: 50vh;
+  }
 }
