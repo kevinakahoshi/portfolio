@@ -3,6 +3,7 @@ import {
   Container,
   Row,
   Col,
+  Fade,
   Button
 } from 'reactstrap';
 
@@ -13,9 +14,9 @@ function Hero() {
         <Row>
           <Col md="6" className="d-flex order-2 order-sm-1">
             <div className="m-auto py-5">
-              <h1 className="">Kevin Akahoshi</h1>
-              <h3 className="text-muted">Full Stack Developer</h3>
-              <Button outline color="secondary">
+              <Fade tag="h1">Kevin Akahoshi</Fade>
+              <Fade tag="h3" className="text-muted">Full Stack Developer</Fade>
+              <Button outline color="secondary" className="fade show">
                 Learn More
               </Button>
             </div>

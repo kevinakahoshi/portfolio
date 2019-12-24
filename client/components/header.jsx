@@ -32,7 +32,7 @@ class Header extends React.Component {
             <NavbarBrand href="/">
             Kevin Akahoshi
             </NavbarBrand>
-            <NavbarToggler onClick={this.handleToggle} navbar/>
+            <NavbarToggler onClick={() => this.handleToggle()} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
