@@ -24,11 +24,37 @@ body {
 }
 
 .about-section {
-  padding: 7.5rem 0rem;
+  padding: 5rem 0rem;
+}
+
+.skills-section {
+  padding: 5rem 0rem;
+}
+
+.topographic {
+  background-image: linear-gradient(#ffffffdc, #ffffffdc), url('./images/Topographic-Map-Pattern-7.png');
+}
+
+.card {
+  transition: .3s all;
+  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
+}
+
+h1 {
+  font-size: 3.5rem;
 }
 
 h3 {
   font-size: 2rem;
+}
+
+p {
+  font-weight: 100;
 }
 
 a {
@@ -68,6 +94,14 @@ a::after {
 a:hover::after {
   width: 100%;
   transition: all .3s ease-in-out;
+}
+
+.large-font {
+  font-size: 6rem;
+}
+
+.pointer {
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
