@@ -28,24 +28,28 @@ body {
   background-image: linear-gradient(-45deg, #FFAE8F90, #FF677D90, #CD668490, #6F5A7E90), url('./images/Topographic-Map-Pattern-7.png');
 }
 
-.about-section {
-  padding: 5rem 0rem;
-}
-
-.skills-section {
+.about-section,
+.skills-section,
+.tools-section,
+.footer {
   padding: 5rem 0rem;
 }
 
 .topographic {
-  background-image: linear-gradient(#ffffffdc, #ffffffdc), url('./images/Topographic-Map-Pattern-7.png');
+  /* background-image: linear-gradient(#ffffffdc, #ffffffdc), url('./images/Topographic-Map-Pattern-7.png'); */
+  background: #fff;
 }
 
 .card {
   transition: .3s all;
+}
+
+.skills-card {
+  transition: .3s all;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
-.card:hover {
+.skills-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
@@ -64,7 +68,7 @@ h1 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -85,9 +89,7 @@ a:hover {
 }
 
 a::before,
-a::after,
-.heading::before,
-.heading::after {
+a::after {
   content: '';
   position: absolute;
   bottom: 0;
@@ -102,8 +104,7 @@ a::after,
   transition: all .3s ease-in-out;
 }
 
-a::after,
-.heading::after {
+a::after {
   width: 0%;
   background-color: #e64242;
 }
@@ -145,40 +146,62 @@ a:hover::after,
   z-index: 1;
 }
 
-.card-body:hover .devicons-javascript_badge {
+.devicons-javascript_badge {
   color: #f7e200;
 }
 
-.card-body:hover .devicons-jquery {
+.devicons-react {
+  color: #61dafb;
+}
+
+.devicons-jquery {
   color: #0769AD;
 }
 
-.card-body:hover .devicons-mysql {
+.devicons-mysql {
   color: #0074a3;
 }
 
-.card-body:hover .devicons-html5 {
+.devicons-html5 {
   color: #ff6421;
 }
 
-.card-body:hover .devicons-css3 {
+.devicons-css3 {
   color: #006cc0;
 }
 
-.card-body:hover .devicons-php {
+.devicons-php {
   color: #8892BF;
 }
 
-.card-body:hover .devicons-bootstrap {
+.devicons-bootstrap {
   color: #563d7c;
 }
 
-.card-body:hover .background-test {
+.background-test {
   background: #000;
 }
 
 .nihon {
   color: #e64242;
+}
+
+.nihon-background {
+  background: linear-gradient(-45deg, #e64242, #e67442);
+}
+
+.topographic-2 {
+  background-image: linear-gradient(-45deg, #e64242ef, #e67342ef), url('./images/Topographic-Map-Pattern-5.png');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.tools-section .card {
+  border-color: transparent;
+}
+
+.tools-section .card:hover {
+  border-color: #fff;
 }
 
 @media (max-width: 767px) {

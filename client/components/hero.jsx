@@ -22,7 +22,8 @@ function Hero() {
             </div>
           </Col>
           <Col md="6" className="p-0 order-1 order-sm-2">
-            <div className="hero-graphic"/>
+            {/* <div className="hero-graphic"/> */}
+            <img src="./images/apps.png" className="img-fluid" />
           </Col>
         </Row>
       </Container>

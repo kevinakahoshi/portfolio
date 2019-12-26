@@ -10,7 +10,7 @@ import {
 function Skills() {
   return (
 
-    <div className="skills-section topographic content-div" id="skills">
+    <div className="skills-section topographic content-div position-relative" id="skills">
       <Container>
         <Row>
           <Col xs="12">
@@ -19,7 +19,7 @@ function Skills() {
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-javascript_badge large-font text-center d-block position-relative">
                   <div className="background-test position-absolute"></div>
@@ -32,7 +32,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-react large-font text-center d-block" />
                 <div className="my-3">
@@ -42,7 +42,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-jquery large-font text-center d-block" />
                 <div className="my-3">
@@ -52,7 +52,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-php large-font text-center d-block" />
                 <div className="my-3">
@@ -62,7 +62,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-mysql large-font text-center d-block" />
                 <div className="my-3">
@@ -72,7 +72,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-html5 large-font text-center d-block" />
                 <div className="my-3">
@@ -82,7 +82,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-css3 large-font text-center d-block" />
                 <div className="my-3">
@@ -92,7 +92,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
-            <Card className="h-100 pointer">
+            <Card className="h-100 pointer skills-card">
               <CardBody>
                 <i className="devicons devicons-bootstrap large-font text-center d-block" />
                 <div className="my-3">
