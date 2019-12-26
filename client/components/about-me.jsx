@@ -8,12 +8,12 @@ import {
 function AboutMe() {
   return (
     <div className="bg-light about-section content-div" id="about">
-      <Container fluid>
+      <Container className="container-md">
         <Row>
           <Col md="4">
-            <img src="images/Transparent-Test.png" className="img-fluid" />
+            <img src="images/portrait.png" className="img-fluid" />
           </Col>
-          <Col md="7">
+          <Col md="8">
             <div className="position-relative heading-div">
               <h3 className="heading pb-2">About Me</h3>
             </div>
@@ -23,7 +23,6 @@ function AboutMe() {
             <p>While enrolled in the program, I have learned languages like JavaScript (ES5 + ES6), React.js, jQuery, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/Github, Postman, npm, and Webpack. Lastly, I participated in team-based hackathons, as well as solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to pursue web development, and has helped feed my curiosity.</p>
             <p>Because I have years of experience working with clients, and seeing things from their point of view, I bring a unique perspective to the conversation. I’m the Account Manager gone rogue.</p>
           </Col>
-          <Col md="1" />
         </Row>
       </Container>
     </div>
