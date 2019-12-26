@@ -7,14 +7,16 @@ import {
 
 function AboutMe() {
   return (
-    <div className="bg-light about-section" id="about">
+    <div className="bg-light about-section content-div" id="about">
       <Container fluid>
         <Row>
           <Col md="4">
             <img src="images/Transparent-Test.png" className="img-fluid" />
           </Col>
           <Col md="7">
-            <h3>About Me</h3>
+            <div className="position-relative heading-div">
+              <h3 className="heading pb-2">About Me</h3>
+            </div>
             <p>I’m Kevin Akahoshi, and I’m a developer that has a passion for technology and coding.</p>
             <p>I’ve always had an interest in technology, and ever since I can remember I’ve been involved in computers. My first taste of programming came in the form of a few computer science courses at UC Riverside, which gave me some exposure to HTML and a little bit of C++. Through my professional experiences, I continued to find myself drawn to tech.</p>
             <p>For the last four years, I’ve worked as an Account Manager in various organizations to help solve problems that our clients were having with technology. After working around many developers however, I decided to make the jump to fulfill my curiosity, and to pursue programming full time. I enrolled in an accelerated Full-Stack Web Development Program at LearningFuze.</p>

@@ -10,11 +10,13 @@ import {
 function Skills() {
   return (
 
-    <div className="skills-section topographic" id="skills">
+    <div className="skills-section topographic content-div" id="skills">
       <Container>
         <Row>
           <Col xs="12">
-            <h3 className="text-center">Technical Skills</h3>
+            <div className="heading-div position-relative m-auto">
+              <h3 className="text-center heading pb-2">Technical Skills</h3>
+            </div>
           </Col>
           <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
