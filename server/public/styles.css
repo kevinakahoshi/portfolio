@@ -107,7 +107,7 @@ a::after {
 
 a::after {
   width: 0%;
-  background-color: #e64242;
+  background: linear-gradient(-45deg, #e64242, #e67442);
 }
 
 a:hover::after,
