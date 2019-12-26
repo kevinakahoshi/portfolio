@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Corsa Grotesk', sans-serif;
+  src: url(/fonts/Corsa_Grotesk_Regular.otf);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 87px;
@@ -5,12 +10,12 @@ html {
 
 body {
   margin: 0 0 0 0;
+  font-family: 'Corsa Grotesk';
   font-size: 0;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
 }
 
@@ -47,6 +52,7 @@ body {
 
 h1 {
   font-size: 3.5rem;
+  font-weight: 600;
 }
 
 h3 {
@@ -78,9 +84,9 @@ a::after {
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 5px;
+  height: 3px;
   width: 100%;
-  background-color: #fdb811;
+  background-color: transparent;
   z-index: 1;
   display: inline-block;
   transition: all .3s ease-in-out;
@@ -88,7 +94,7 @@ a::after {
 
 a::after {
   width: 0%;
-  background-color: #003a78;
+  background-color: #e64242;
 }
 
 a:hover::after {
@@ -102,6 +108,61 @@ a:hover::after {
 
 .pointer {
   cursor: pointer;
+}
+
+.aka-button {
+  padding: .75rem 2.5rem;
+}
+
+.card-body * {
+  transition: .3s all;
+  width: fit-content;
+  margin: auto;
+}
+
+.devicons-javascript_badge:before {
+  position: relative;
+  z-index: 2;
+}
+
+.background-test {
+  bottom: 2px;
+  right: 2px;
+  height: 75%;
+  width: 75%;
+  z-index: 1;
+}
+
+.card-body:hover .devicons-javascript_badge {
+  color: #f7e200;
+}
+
+.card-body:hover .devicons-jquery {
+  color: #0769AD;
+}
+
+.card-body:hover .devicons-mysql {
+  color: #0074a3;
+}
+
+.card-body:hover .devicons-html5 {
+  color: #ff6421;
+}
+
+.card-body:hover .devicons-css3 {
+  color: #006cc0;
+}
+
+.card-body:hover .devicons-php {
+  color: #8892BF;
+}
+
+.card-body:hover .devicons-bootstrap {
+  color: #563d7c;
+}
+
+.card-body:hover .background-test {
+  background: #000;
 }
 
 @media (max-width: 767px) {

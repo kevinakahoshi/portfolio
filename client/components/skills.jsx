@@ -16,28 +16,30 @@ function Skills() {
           <Col xs="12">
             <h3 className="text-center">Technical Skills</h3>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
-                <i className="devicons devicons-javascript_badge large-font text-center d-block" />
+                <i className="devicons devicons-javascript_badge large-font text-center d-block position-relative">
+                  <div className="background-test position-absolute"></div>
+                </i>
                 <div className="my-3">
                   <h4 className="text-center">JavaScript</h4>
-                  <small className="text-center d-block">(ES5 + ES6)</small>
+                  {/* <small className="text-center d-block">(ES5 + ES6)</small> */}
                 </div>
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
-                <i className="devicons devicon-react-plain large-font text-center d-block" />
+                <i className="devicons devicons-react large-font text-center d-block" />
                 <div className="my-3">
                   <h4 className="text-center">React.js</h4>
                 </div>
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-jquery large-font text-center d-block" />
@@ -47,7 +49,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-php large-font text-center d-block" />
@@ -57,7 +59,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-mysql large-font text-center d-block" />
@@ -67,7 +69,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-html5 large-font text-center d-block" />
@@ -77,7 +79,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-css3 large-font text-center d-block" />
@@ -87,7 +89,7 @@ function Skills() {
               </CardBody>
             </Card>
           </Col>
-          <Col md="3" sm="6" xs="12" className="p-3">
+          <Col lg="3" md="4" sm="6" xs="12" className="p-3">
             <Card className="h-100 pointer">
               <CardBody>
                 <i className="devicons devicons-bootstrap large-font text-center d-block" />

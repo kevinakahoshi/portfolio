@@ -29,7 +29,8 @@ class Header extends React.Component {
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
           <Navbar color="faded" light expand="md" className="row">
-            <NavbarBrand href="/">
+            <NavbarBrand onClick={() => window.scrollTo(0, 0)}
+              className="pointer">
             Kevin Akahoshi
             </NavbarBrand>
             <NavbarToggler onClick={() => this.handleToggle()} navbar="true" />
@@ -40,6 +41,9 @@ class Header extends React.Component {
                 </NavItem>
                 <NavItem className="ml-md-5">
                   <NavLink href="#skills">Skills</NavLink>
+                </NavItem>
+                <NavItem className="ml-md-5">
+                  <NavLink href="#tools">Tools</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
                   <NavLink href="#applications">Applications</NavLink>
