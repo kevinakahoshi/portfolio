@@ -15,7 +15,7 @@ function AboutMe() {
           </Col>
           <Col md="8">
             <div className="position-relative heading-div">
-              <h3 className="heading pb-2">About Me</h3>
+              <h3 className="heading mb-4">About Me</h3>
             </div>
             <p>I’m Kevin Akahoshi, and I’m a developer that has a passion for technology and coding.</p>
             <p>I’ve always had an interest in technology, and ever since I can remember I’ve been involved in computers. My first taste of programming came in the form of a few computer science courses at UC Riverside, which gave me some exposure to HTML and a little bit of C++. Through my professional experiences, I continued to find myself drawn to tech.</p>

@@ -15,7 +15,7 @@ function Tools() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading pb-2 text-white">Tools</h3>
+              <h3 className="text-center heading mb-4 text-white">Tools</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
