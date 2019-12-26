@@ -13,7 +13,7 @@ function Hero() {
       <Container className="m-auto" fluid>
         <Row>
           <Col md="6" className="d-flex order-2 order-sm-1">
-            <div className="m-auto py-5">
+            <div className="m-auto">
               <Fade tag="h1">Kevin Akahoshi</Fade>
               <Fade tag="h3" className="text-muted">Full Stack Developer</Fade>
               <Button outline color="secondary" className="aka-button fade show">

@@ -28,6 +28,7 @@ body {
   background-image: linear-gradient(-45deg, #FFAE8F90, #FF677D90, #CD668490, #6F5A7E90), url('./images/Topographic-Map-Pattern-7.png');
 }
 
+.main-hero,
 .about-section,
 .skills-section,
 .tools-section,
@@ -106,7 +107,7 @@ a::after {
 
 a::after {
   width: 0%;
-  background-color: #e64242;
+  background: linear-gradient(-45deg, #e64242, #e67442);
 }
 
 a:hover::after,
@@ -207,5 +208,17 @@ a:hover::after,
 @media (max-width: 767px) {
   .hero-graphic {
     min-height: 50vh;
+  }
+}
+
+@media (max-width: 575px) {
+  .mobile-six-row {
+    justify-content: space-evenly;
+  }
+
+  .mobile-six-card {
+    width: calc(50% - 30px);
+    padding: 0px;
+    margin-bottom: 15px;
   }
 }
