@@ -8,31 +8,31 @@ class Carousel extends React.Component {
   constructor() {
     super();
     this.state = {
-      currentImage: 1,
+      currentProject: 0,
       projects: [
         {
           id: 1,
           image: null,
           name: 'Spontaneous.ly',
-          description: '',
-          github: null,
-          live: null
+          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem aspernatur dignissimos totam, rem alias quaerat ducimus exercitationem repellendus commodi. Temporibus eum illo necessitatibus vel recusandae ullam laudantium nemo labore quaerat.',
+          github: 'https://github.com/kevinakahoshi/spontaneous.ly',
+          live: 'https://spontaneouslyapp.com/'
         },
         {
           id: 2,
           image: null,
           name: 'Coffeine Supply Co',
-          description: '',
-          github: null,
-          live: null
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel similique perspiciatis magnam? Laboriosam, soluta, illo ab perspiciatis quae placeat ratione officiis quos delectus quasi, natus reprehenderit deleniti magni quod?',
+          github: 'https://github.com/kevinakahoshi/coffeine-supply-co',
+          live: 'https://coffeine.kevinakahoshi.com/'
         },
         {
           id: 3,
           image: null,
           name: 'Cyberpunk Logo Match',
-          description: '',
-          github: null,
-          live: null
+          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum nemo sunt veniam inventore et quo commodi quia dolore laboriosam, officiis cumque impedit mollitia aliquid consectetur in ducimus, ab accusamus.',
+          github: 'https://github.com/kevinakahoshi/cyberpunk-logo-match',
+          live: 'https://cyberpunk.kevinakahoshi.com/'
         }
       ]
     };
@@ -43,29 +43,29 @@ class Carousel extends React.Component {
 
   previousHandler() {
     const currentState = JSON.parse(JSON.stringify(this.state));
-    currentState.currentImage--;
-    if (currentState.currentImage === 0) {
-      currentState.currentImage = 3;
+    currentState.currentProject--;
+    if (currentState.currentProject === -1) {
+      currentState.currentProject = 2;
     }
     this.setState(currentState);
   }
 
   nextHandler() {
     const currentState = JSON.parse(JSON.stringify(this.state));
-    currentState.currentImage++;
-    if (currentState.currentImage === 4) {
-      currentState.currentImage = 1;
+    currentState.currentProject++;
+    if (currentState.currentProject === 3) {
+      currentState.currentProject = 0;
     }
     this.setState(currentState);
   }
 
   render() {
+    const currentProject = this.state.projects[this.state.currentProject];
     return (
       <Row>
         <Col md="6" sm="12">
           <div className="carousel d-flex border rounded">
             <div className="carousel-image">
-
             </div>
           </div>
           <div className="mt-3 d-flex">
@@ -88,11 +88,18 @@ class Carousel extends React.Component {
         <Col md="6" sm="12">
           <div className="d-flex h-100">
             <div className="m-auto">
-              <h6 className="h5">Project 1</h6>
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquam aspernatur itaque nisi, delectus, hic, esse molestias quo voluptatibus quasi doloremque veritatis velit sunt? Non veritatis quasi vel quidem, sequi maiores.</p>
-              <a href="#" className="py-2 mr-2">
+              <h6 className="h5">{currentProject.name}</h6>
+              <p>{currentProject.description}</p>
+              <a href={currentProject.github}
+                className="py-2 mr-2"
+                rel="noopener noreferrer"
+                target="_blank">
                 <i className="fab fa-github mr-2"/> Github
-              </a> | <a href="#" className="py-2 ml-2">
+              </a> |
+              <a href={currentProject.live}
+                className="py-2 ml-2"
+                rel="noopener noreferrer"
+                target="_blank">
                 <i className="far fa-window-restore mr-2" /> Live
               </a>
             </div>
