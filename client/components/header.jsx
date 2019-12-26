@@ -29,23 +29,27 @@ class Header extends React.Component {
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
           <Navbar color="faded" light expand="md" className="row">
-            <NavbarBrand href="/">
+            <NavbarBrand onClick={() => window.scrollTo(0, 0)}
+              className="pointer">
             Kevin Akahoshi
             </NavbarBrand>
             <NavbarToggler onClick={() => this.handleToggle()} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink href="#about">About Me</NavLink>
+                  <NavLink className="pointer" onClick={() => document.getElementById('about').scrollIntoView(true)}>About Me</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink href="#skills">Skills</NavLink>
+                  <NavLink className="pointer" onClick={() => document.getElementById('skills').scrollIntoView(true)}>Skills</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink href="#applications">Applications</NavLink>
+                  <NavLink className="pointer" onClick={() => document.getElementById('tools').scrollIntoView(true)}>Tools</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink href="#contact">Contact</NavLink>
+                  <NavLink className="pointer" onClick={() => document.getElementById('applications').scrollIntoView(true)}>Applications</NavLink>
+                </NavItem>
+                <NavItem className="ml-md-5">
+                  <NavLink className="pointer" onClick={() => document.getElementById('contact').scrollIntoView(true)}>Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>

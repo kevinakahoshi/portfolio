@@ -3,6 +3,8 @@ import Header from './header';
 import Hero from './hero';
 import AboutMe from './about-me';
 import Skills from './skills';
+import Tools from './tools';
+import Footer from './footer';
 
 class App extends React.Component {
   // constructor() {
@@ -18,6 +20,8 @@ class App extends React.Component {
         <Hero />
         <AboutMe />
         <Skills />
+        <Tools />
+        <Footer />
       </>
     );
   }

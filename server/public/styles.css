@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Corsa Grotesk', sans-serif;
+  src: url(/fonts/Corsa_Grotesk_Regular.otf);
+}
+
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 87px;
@@ -5,12 +10,12 @@ html {
 
 body {
   margin: 0 0 0 0;
+  font-family: 'Corsa Grotesk';
   font-size: 0;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Rubik', sans-serif;
   font-size: 1rem;
 }
 
@@ -23,34 +28,47 @@ body {
   background-image: linear-gradient(-45deg, #FFAE8F90, #FF677D90, #CD668490, #6F5A7E90), url('./images/Topographic-Map-Pattern-7.png');
 }
 
-.about-section {
-  padding: 5rem 0rem;
-}
-
-.skills-section {
+.about-section,
+.skills-section,
+.tools-section,
+.footer {
   padding: 5rem 0rem;
 }
 
 .topographic {
-  background-image: linear-gradient(#ffffffdc, #ffffffdc), url('./images/Topographic-Map-Pattern-7.png');
+  /* background-image: linear-gradient(#ffffffdc, #ffffffdc), url('./images/Topographic-Map-Pattern-7.png'); */
+  background: #fff;
 }
 
 .card {
   transition: .3s all;
+}
+
+.skills-card {
+  transition: .3s all;
   box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
 }
 
-.card:hover {
+.skills-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
 
+.heading-div {
+  width: fit-content;
+}
+
+.heading {
+  font-weight: 600;
+}
+
 h1 {
   font-size: 3.5rem;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 p {
@@ -78,9 +96,9 @@ a::after {
   left: 0;
   right: 0;
   margin: 0 auto;
-  height: 5px;
+  height: 3px;
   width: 100%;
-  background-color: #fdb811;
+  background-color: transparent;
   z-index: 1;
   display: inline-block;
   transition: all .3s ease-in-out;
@@ -88,10 +106,11 @@ a::after {
 
 a::after {
   width: 0%;
-  background-color: #003a78;
+  background-color: #e64242;
 }
 
-a:hover::after {
+a:hover::after,
+.content-div:hover .heading::after {
   width: 100%;
   transition: all .3s ease-in-out;
 }
@@ -102,6 +121,87 @@ a:hover::after {
 
 .pointer {
   cursor: pointer;
+}
+
+.aka-button {
+  padding: .75rem 2.5rem;
+}
+
+.card-body * {
+  transition: .3s all;
+  width: fit-content;
+  margin: auto;
+}
+
+.devicons-javascript_badge:before {
+  position: relative;
+  z-index: 2;
+}
+
+.background-test {
+  bottom: 2px;
+  right: 2px;
+  height: 75%;
+  width: 75%;
+  z-index: 1;
+}
+
+.devicons-javascript_badge {
+  color: #f7e200;
+}
+
+.devicons-react {
+  color: #61dafb;
+}
+
+.devicons-jquery {
+  color: #0769AD;
+}
+
+.devicons-mysql {
+  color: #0074a3;
+}
+
+.devicons-html5 {
+  color: #ff6421;
+}
+
+.devicons-css3 {
+  color: #006cc0;
+}
+
+.devicons-php {
+  color: #8892BF;
+}
+
+.devicons-bootstrap {
+  color: #563d7c;
+}
+
+.background-test {
+  background: #000;
+}
+
+.nihon {
+  color: #e64242;
+}
+
+.nihon-background {
+  background: linear-gradient(-45deg, #e64242, #e67442);
+}
+
+.topographic-2 {
+  background-image: linear-gradient(-45deg, #e64242ef, #e67342ef), url('./images/Topographic-Map-Pattern-5.png');
+  background-size: contain;
+  background-repeat: repeat;
+}
+
+.tools-section .card {
+  border-color: transparent;
+}
+
+.tools-section .card:hover {
+  border-color: #fff;
 }
 
 @media (max-width: 767px) {
