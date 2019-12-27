@@ -4,7 +4,8 @@ import Hero from './hero';
 import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
-import Footer from './footer';
+import Applications from './applications';
+import Contact from './Contact';
 
 class App extends React.Component {
   // constructor() {
@@ -21,7 +22,8 @@ class App extends React.Component {
         <AboutMe />
         <Skills />
         <Tools />
-        <Footer />
+        <Applications />
+        <Contact />
       </>
     );
   }

@@ -15,7 +15,7 @@ function Skills() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading pb-2">Technical Skills</h3>
+              <h3 className="text-center heading mb-4">Technical Skills</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
@@ -53,7 +53,7 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 pointer skills-card">
               <CardBody>
-                <i className="devicons devicons-php large-font text-center d-block" />
+                <i className="devicons devicon-php-plain colored large-font text-center d-block" />
                 <div className="my-3">
                   <h4 className="text-center h5">PHP</h4>
                 </div>
@@ -63,7 +63,7 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 pointer skills-card">
               <CardBody>
-                <i className="devicons devicons-mysql large-font text-center d-block" />
+                <i className="devicons devicon-mysql-plain colored large-font text-center d-block" />
                 <div className="my-3">
                   <h4 className="text-center h5">MySQL</h4>
                 </div>
@@ -95,7 +95,7 @@ function Skills() {
               <CardBody>
                 <i className="devicons devicons-bootstrap large-font text-center d-block" />
                 <div className="my-3">
-                  <h4 className="text-center h5">Bootstrap 4</h4>
+                  <h4 className="text-center h5">Bootstrap</h4>
                 </div>
               </CardBody>
             </Card>
