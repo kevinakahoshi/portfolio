@@ -20,7 +20,8 @@ class Carousel extends React.Component {
           id: 1,
           image: './images/spontaneously-carousel.jpg',
           name: 'Spontaneous.ly',
-          description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem aspernatur dignissimos totam, rem alias quaerat ducimus exercitationem repellendus commodi. Temporibus eum illo necessitatibus vel recusandae ullam laudantium nemo labore quaerat.',
+          description: 'Spontaneous.ly is a full stack application for users that want to embark on a spontaneous adventure.  Users can enter their zipcode, add filtering for results, and choose activities based on the returned results.  By attending activities, users will gain points, as well as see the other users attending the activity.  If users don\'t like the activities they are presented, they have the option to spend their points to go back to the filtering screen, or cancel their reservation for a given activity',
+          technologies: ['React.js', 'HTML', 'CSS', 'PHP', 'MySQL'],
           github: 'https://github.com/kevinakahoshi/spontaneous.ly',
           live: 'https://spontaneouslyapp.com/'
         },
@@ -28,7 +29,8 @@ class Carousel extends React.Component {
           id: 2,
           image: './images/coffeine-carousel.jpg',
           name: 'Coffeine Supply Co',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit vel similique perspiciatis magnam? Laboriosam, soluta, illo ab perspiciatis quae placeat ratione officiis quos delectus quasi, natus reprehenderit deleniti magni quod?',
+          description: 'Coffeine Supply Co is a full stack applicaiton developed for coffee lovers.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
+          technologies: ['React.js', 'HTML', 'CSS', 'PHP', 'MySQL'],
           github: 'https://github.com/kevinakahoshi/coffeine-supply-co',
           live: 'https://coffeine.kevinakahoshi.com/'
         },
@@ -36,7 +38,8 @@ class Carousel extends React.Component {
           id: 3,
           image: './images/cyberpunk-carousel.jpg',
           name: 'Cyberpunk Logo Match',
-          description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus cum nemo sunt veniam inventore et quo commodi quia dolore laboriosam, officiis cumque impedit mollitia aliquid consectetur in ducimus, ab accusamus.',
+          technologies: ['jQuery', 'JavaScript', 'HTML', 'CSS'],
+          description: 'Cyberpunk Logo Match is a memory matching game based on the dystopian future.  Users need to match corporate sponsor logos in under 60 seconds with above 50% accuracy to avoid being infected with malicious software.',
           github: 'https://github.com/kevinakahoshi/cyberpunk-logo-match',
           live: 'https://cyberpunk.kevinakahoshi.com/'
         }
@@ -49,7 +52,7 @@ class Carousel extends React.Component {
   }
 
   startTimer() {
-    this.interval = setInterval(this.nextHandler, 5000);
+    // this.interval = setInterval(this.nextHandler, 5000);
   }
 
   stopTimer() {
@@ -88,6 +91,12 @@ class Carousel extends React.Component {
 
   render() {
     const currentProject = this.state.projects[this.state.currentProject];
+    const technologies = currentProject.technologies.map((technology, index) => {
+      return <li key={index}>
+        {technology}
+      </li>;
+    });
+
     return (
       <CSSTransition in={this.state.showProjects}
         key={currentProject.id}
@@ -96,16 +105,31 @@ class Carousel extends React.Component {
         classNames="fade">
         <Row>
           <Col md="6" sm="12">
-            <Fade in={true}
-              tag="img"
-              src={currentProject.image}
-              className="img-fluid border rounded smooth-transition" />
-            <div className="mt-3 d-flex">
+            <a href={currentProject.live}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="pointer decoration-none position-relative">
+              <Fade in={true}
+                tag="img"
+                src={currentProject.image}
+                className="img-fluid border rounded smooth-transition"
+                onMouseEnter={this.stopTimer}
+                onMouseLeave={this.startTimer} />
+            </a>
+            <div className="my-3 d-flex">
               <div className="d-flex">
-                <div className="my-auto"></div>
-                <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}></div>
-                <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}></div>
-                <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} my-auto pointer`}></div>
+                <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}
+                  onClick={() => this.setState({ currentProject: 0 })}
+                  onMouseEnter={this.stopTimer}
+                  onMouseLeave={this.startTimer} />
+                <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}
+                  onClick={() => this.setState({ currentProject: 1 })}
+                  onMouseEnter={this.stopTimer}
+                  onMouseLeave={this.startTimer} />
+                <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} my-auto pointer`}
+                  onClick={() => this.setState({ currentProject: 2 })}
+                  onMouseEnter={this.stopTimer}
+                  onMouseLeave={this.startTimer} />
               </div>
               <div className="d-flex ml-auto carousel-controls-div">
                 <button className="carousel-button smooth-transition pointer bg-white d-flex mr-3 rounded"
@@ -125,6 +149,10 @@ class Carousel extends React.Component {
                 onMouseLeave={this.startTimer}>
                 <h6 className="h5 smooth-transition">{currentProject.name}</h6>
                 <p className="smooth-transition">{currentProject.description}</p>
+                <h6 className="h5 smooth-transition">Developed Using</h6>
+                <ul>
+                  {technologies}
+                </ul>
                 <a href={currentProject.github}
                   className="py-2 mr-3"
                   rel="noopener noreferrer"

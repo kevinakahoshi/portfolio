@@ -119,6 +119,11 @@ a:hover::after,
   transition: all .3s ease-in-out;
 }
 
+a.decoration-none:hover::before,
+a.decoration-none:hover::after {
+  display: none;
+}
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
@@ -126,6 +131,10 @@ a:hover::after,
 
 .large-font {
   font-size: 6rem;
+}
+
+.medium-font {
+  font-size: 4.5rem;
 }
 
 .pointer {
@@ -209,20 +218,12 @@ a:hover::after,
   color: #0769AD;
 }
 
-.devicons-mysql {
-  color: #0074a3;
-}
-
 .devicons-html5 {
   color: #ff6421;
 }
 
 .devicons-css3 {
   color: #006cc0;
-}
-
-.devicons-php {
-  color: #8892BF;
 }
 
 .devicons-bootstrap {

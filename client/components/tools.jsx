@@ -21,7 +21,7 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none pointer bg-transparent text-white">
               <CardBody>
-                <i className="devicons devicons-github large-font text-center d-block" />
+                <i className="devicons devicon-github-plain large-font text-center d-block" />
                 <div className="my-3">
                   <h4 className="text-center">Github</h4>
                 </div>
@@ -51,9 +51,9 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none pointer bg-transparent text-white">
               <CardBody>
-                <i className="devicons devicons-photoshop large-font text-center d-block" />
+                <i className="devicons devicon-webpack-plain large-font text-center d-block" />
                 <div className="my-3">
-                  <h4 className="text-center">Photoshop</h4>
+                  <h4 className="text-center">Webpack</h4>
                 </div>
               </CardBody>
             </Card>
@@ -61,9 +61,9 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none pointer bg-transparent text-white">
               <CardBody>
-                <i className="fab fa-figma large-font text-center d-block" />
+                <i className="devicons devicon-babel-plain large-font text-center d-block" />
                 <div className="my-3">
-                  <h4 className="text-center">Figma</h4>
+                  <h4 className="text-center">Babel</h4>
                 </div>
               </CardBody>
             </Card>
@@ -71,9 +71,9 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none pointer bg-transparent text-white">
               <CardBody>
-                <i className="devicons devicons-jira large-font text-center d-block" />
+                <i className="devicons devicon-apache-line large-font text-center d-block" />
                 <div className="my-3">
-                  <h4 className="text-center">JIRA</h4>
+                  <h4 className="text-center">Apache</h4>
                 </div>
               </CardBody>
             </Card>
@@ -91,9 +91,49 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none pointer bg-transparent text-white">
               <CardBody>
-                <i className="devicons devicon-babel-plain large-font text-center d-block" />
+                <i className="devicons devicons-jira large-font text-center d-block" />
                 <div className="my-3">
-                  <h4 className="text-center">Babel</h4>
+                  <h4 className="text-center">JIRA</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 shadow-none pointer bg-transparent text-white">
+              <CardBody>
+                <i className="devicons devicon-visualstudio-plain large-font text-center d-block" />
+                <div className="my-3">
+                  <h4 className="text-center">VS Code</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 shadow-none pointer bg-transparent text-white">
+              <CardBody>
+                <i className="fab fa-figma large-font text-center d-block" />
+                <div className="my-3">
+                  <h4 className="text-center">Figma</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 shadow-none pointer bg-transparent text-white">
+              <CardBody>
+                <i className="devicons devicons-photoshop large-font text-center d-block" />
+                <div className="my-3">
+                  <h4 className="text-center">Photoshop</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 shadow-none pointer bg-transparent text-white">
+              <CardBody>
+                <i className="devicons devicon-slack-plain large-font text-center d-block" />
+                <div className="my-3">
+                  <h4 className="text-center">Slack</h4>
                 </div>
               </CardBody>
             </Card>
