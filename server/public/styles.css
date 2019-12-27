@@ -42,10 +42,13 @@ body {
 
 .skills-card {
   transition: .3s all;
-  box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+  border: 1px solid transparent;
+  z-index: 0;
+  /* box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15); */
 }
 
 .skills-card:hover {
+  z-index: 1;
   transform: translateY(-5px);
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175);
 }
@@ -144,7 +147,15 @@ a:hover::after,
 }
 
 .carousel-button {
-  padding: .5rem 1rem;
+  height: 50px;
+  width: 50px;
+  color: #dee2e6;
+  border: 1px solid;
+}
+
+.carousel-button:hover {
+  color: #979797;
+  border-color: #979797;
 }
 
 .carousel-button:focus {
@@ -163,8 +174,8 @@ a:hover::after,
   height: 1rem;
   width: 1rem;
   border-radius: 5rem;
-  background: #e64242;
-  border-color: #e64242;
+  background: #979797;
+  border-color: #979797;
 }
 
 .card-body * {
@@ -242,6 +253,41 @@ a:hover::after,
 
 .tools-section .card:hover {
   border-color: #fff;
+}
+
+.smooth-transition {
+  transition: .3s all;
+}
+
+.fade-appear {
+  opacity: 0;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 1s all;
+}
+
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter.fade-enter-active {
+  opacity: 1;
+  transition: opacity 1s all;
+}
+
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 1s all;
+}
+
+.fade-exit-done {
+  opacity: 0;
 }
 
 @media (max-width: 767px) {

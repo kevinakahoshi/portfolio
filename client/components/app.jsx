@@ -5,7 +5,7 @@ import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
 import Applications from './applications';
-import Footer from './footer';
+import Contact from './Contact';
 
 class App extends React.Component {
   // constructor() {
@@ -23,7 +23,7 @@ class App extends React.Component {
         <Skills />
         <Tools />
         <Applications />
-        <Footer />
+        <Contact />
       </>
     );
   }
