@@ -124,6 +124,10 @@ a.decoration-none:hover::after {
   display: none;
 }
 
+.default-color {
+  color: #212529;
+}
+
 .navbar-toggler:focus {
   outline: none;
   box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
@@ -228,6 +232,14 @@ a.decoration-none:hover::after {
 
 .devicons-bootstrap {
   color: #563d7c;
+}
+
+.contact-github:hover {
+  color: #000000;
+}
+
+.contact-linkedin:hover {
+  color: #0073b1;
 }
 
 .background-test {
