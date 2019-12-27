@@ -3,8 +3,8 @@ import {
   Container,
   Row,
   Col,
-  Fade,
-  Button
+  Fade
+  // Button
 } from 'reactstrap';
 
 function Hero() {
@@ -16,14 +16,12 @@ function Hero() {
             <div className="m-auto">
               <Fade tag="h1">Kevin Akahoshi</Fade>
               <Fade tag="h3" className="text-muted">Full Stack Developer</Fade>
-              <Button outline color="secondary" className="aka-button fade show">
-                Learn More
-              </Button>
+              <Fade tag="button" className="btn btn-outline-secondary aka-button fade show">Learn More</Fade>
             </div>
           </Col>
           <Col md="6" className="p-0 order-1 order-sm-2">
-            {/* <div className="hero-graphic"/> */}
-            <img src="./images/apps.png" className="img-fluid" />
+            <Fade tag="img" src="./images/apps.png" className="img-fluid" />
+            {/* <img src="./images/apps.png" className="img-fluid" /> */}
           </Col>
         </Row>
       </Container>

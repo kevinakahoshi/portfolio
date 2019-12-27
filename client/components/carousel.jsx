@@ -120,7 +120,9 @@ class Carousel extends React.Component {
           <Col md="6" sm="12">
             <div className="d-flex h-100">
               <Fade in={true}
-                className="m-auto">
+                className="m-auto"
+                onMouseEnter={this.stopTimer}
+                onMouseLeave={this.startTimer}>
                 <h6 className="h5 smooth-transition">{currentProject.name}</h6>
                 <p className="smooth-transition">{currentProject.description}</p>
                 <a href={currentProject.github}

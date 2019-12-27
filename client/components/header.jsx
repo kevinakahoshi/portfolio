@@ -46,19 +46,19 @@ class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="pointer" onClick={() => this.handleNavClick('about')}>About Me</NavLink>
+                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('about')}>About Me</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer" onClick={() => this.handleNavClick('skills')}>Skills</NavLink>
+                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('skills')}>Skills</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer" onClick={() => this.handleNavClick('tools')}>Tools</NavLink>
+                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('tools')}>Tools</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer" onClick={() => this.handleNavClick('applications')}>Applications</NavLink>
+                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('applications')}>Applications</NavLink>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer" onClick={() => this.handleNavClick('contact')}>Contact</NavLink>
+                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('contact')}>Contact</NavLink>
                 </NavItem>
               </Nav>
             </Collapse>
