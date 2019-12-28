@@ -14,15 +14,14 @@ function Hero() {
         <Row>
           <Col md="6" className="d-flex order-2 order-sm-1">
             <div className="m-auto">
-              <Fade tag="h1">Kevin Akahoshi</Fade>
-              <Fade tag="h3" className="text-muted">Full Stack Developer</Fade>
-              {/* <Fade tag="button" className="btn btn-outline-secondary aka-button fade show smooth-transition"
-                onClick={() => document.getElementById('about').scrollIntoView(true)}>Learn More</Fade> */}
+              <Fade tag="h1"
+                className="spread">Kevin Akahoshi</Fade>
+              <Fade tag="h2"
+                className="text-muted h3">Full Stack Developer</Fade>
             </div>
           </Col>
           <Col md="6" className="p-0 order-1 order-sm-2">
             <Fade tag="img" src="./images/apps.png" className="img-fluid" />
-            {/* <img src="./images/apps.png" className="img-fluid" /> */}
           </Col>
         </Row>
       </Container>

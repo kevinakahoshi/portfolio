@@ -15,7 +15,7 @@ function Skills() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4">Technical Skills</h3>
+              <h3 className="text-center heading mb-4 spread">Technical Skills</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">

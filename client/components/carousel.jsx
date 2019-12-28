@@ -52,7 +52,7 @@ class Carousel extends React.Component {
   }
 
   startTimer() {
-    // this.interval = setInterval(this.nextHandler, 5000);
+    this.interval = setInterval(this.nextHandler, 5000);
   }
 
   stopTimer() {
