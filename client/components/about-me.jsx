@@ -12,10 +12,52 @@ function AboutMe() {
         <Row>
           <Col md="4">
             <img src="images/portrait.png" className="img-fluid" />
+            <div className="my-3 d-flex justify-content-around">
+              <a href="https://github.com/kevinakahoshi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-github pointer">
+                <div className="border-div-small d-flex">
+                  <i className="fab fa-github small-font m-auto" />
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/kevin-akahoshi/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-linkedin pointer">
+                <div className="border-div-small d-flex">
+                  <i className="fab fa-linkedin small-font m-auto" />
+                </div>
+              </a>
+              <a href="tel:+19492027141"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-general pointer">
+                <div className="border-div-small d-flex">
+                  <i className="fas fa-phone-alt small-font m-auto" />
+                </div>
+              </a>
+              <a href="mailto:kevin.akahoshi@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-general pointer">
+                <div className="border-div-small d-flex">
+                  <i className="far fa-envelope small-font m-auto" />
+                </div>
+              </a>
+              <a href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="decoration-none default-nav contact-general pointer">
+                <div className="border-div-small d-flex">
+                  <i className="far fa-file small-font m-auto" />
+                </div>
+              </a>
+            </div>
           </Col>
           <Col md="8">
             <div className="position-relative heading-div">
-              <h3 className="heading mb-4">About Me</h3>
+              <h3 className="heading mb-4 spread">About Me</h3>
             </div>
             <p>I’m Kevin Akahoshi, and I’m a developer that has a passion for technology and coding.</p>
             <p>I’ve always had an interest in technology, and ever since I can remember I’ve been involved in computers. My first taste of programming came in the form of a few computer science courses at UC Riverside, which gave me some exposure to HTML and a little bit of C++. Through my professional experiences, I continued to find myself drawn to tech.</p>

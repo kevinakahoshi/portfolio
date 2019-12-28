@@ -32,10 +32,10 @@ function Contact() {
             <p className="text-center mb-md-0 mx-4">
               <a href="tel:+19492027141"
                 className="pointer decoration-none default-color p-0">
-                <i className="fas fa-phone-square-alt mr-2" />949-202-7141
+                <i className="fas fa-phone-alt mr-2" />949-202-7141
               </a>
             </p>
-            <p className="text-center mb-md-0 mx-4">
+            <p className="text-center mb-0 mx-4">
               <a href="mailto:kevin.akahoshi@gmail.com"
                 className="pointer decoration-none default-color p-0">
                 <i className="fas fa-envelope mr-2" />kevin.akahoshi@gmail.com
@@ -43,24 +43,30 @@ function Contact() {
             </p>
           </Row>
           <Row className="justify-content-center">
-            <div className="mt-5">
+            <div className="mt-5 d-flex">
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-github pointer">
-                <i className="fab fa-github mx-4 medium-font" />
+                className="decoration-none default-color contact-github pointer m-auto">
+                <div className="border-div d-flex">
+                  <i className="fab fa-github medium-font m-auto" />
+                </div>
               </a>
               <a href="https://www.linkedin.com/in/kevin-akahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-linkedin pointer">
-                <i className="fab fa-linkedin mx-4 medium-font" />
+                className="decoration-none default-color contact-linkedin pointer m-auto">
+                <div className="border-div d-flex mx-4 ">
+                  <i className="fab fa-linkedin medium-font m-auto" />
+                </div>
               </a>
               <a href="#"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color pointer">
-                <i className="far fa-file mx-4 medium-font" />
+                className="decoration-none default-color contact-general pointer m-auto">
+                <div className="border-div d-flex">
+                  <i className="far fa-file medium-font m-auto" />
+                </div>
               </a>
             </div>
           </Row>

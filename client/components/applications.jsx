@@ -12,7 +12,7 @@ function Applications() {
       <Container>
         <Row>
           <Col xs="12">
-            <h3 className="text-center heading mb-4">Applications</h3>
+            <h3 className="text-center heading mb-4 spread">Applications</h3>
             <Carousel />
           </Col>
         </Row>
