@@ -29,7 +29,7 @@ function AboutMe() {
                   <i className="fab fa-linkedin small-font m-auto" />
                 </div>
               </a>
-              <a href="#"
+              <a href="tel:+19492027141"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer">
@@ -37,7 +37,7 @@ function AboutMe() {
                   <i className="fas fa-phone-alt small-font m-auto" />
                 </div>
               </a>
-              <a href="#"
+              <a href="mailto:kevin.akahoshi@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer">

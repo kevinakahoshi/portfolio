@@ -233,6 +233,10 @@ a.decoration-none:hover::after {
   z-index: 1;
 }
 
+.devicons-mysql {
+  color: #00758F;
+}
+
 .devicons-javascript_badge {
   color: #f7e200;
 }
