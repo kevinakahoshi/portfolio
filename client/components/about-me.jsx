@@ -46,12 +46,13 @@ function AboutMe() {
                   <i className="far fa-envelope small-font m-auto" />
                 </div>
               </a>
-              <a href="#"
+              <a href="./assets/Kevin_Akahoshi_-_2019.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer">
+                className="decoration-none default-nav contact-general pointer"
+                download>
                 <div className="border-div-small d-flex">
-                  <i className="far fa-file small-font m-auto" />
+                  <i className="far fa-file-alt small-font m-auto" />
                 </div>
               </a>
             </div>
