@@ -20,7 +20,7 @@ function Hero() {
             </div>
           </Col>
           <Col md="6" className="p-0 order-1 order-sm-2">
-            <Fade tag="img" src="./images/apps.png" className="img-fluid" />
+            <Fade tag="img" src="./images/apps-resize.png" className="img-fluid" />
           </Col>
         </Row>
       </Container>
