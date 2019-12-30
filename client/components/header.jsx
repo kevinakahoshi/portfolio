@@ -6,7 +6,8 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem
+  NavItem,
+  Fade
 } from 'reactstrap';
 import {
   Link,
@@ -29,10 +30,10 @@ class Header extends React.Component {
   }
 
   render() {
-    let offset = -87;
+    let offset = -81;
 
     if (window.innerWidth < 768) {
-      offset = -287;
+      offset = -281;
     }
 
     return (
@@ -48,7 +49,9 @@ class Header extends React.Component {
               }
             }}
             className="pointer decoration-none">
-              <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
+              <Fade
+                tag="img"
+                src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
                 className="img-fluid header-logo"
                 alt="K/A - Kevin Akahoshi" />
             </NavbarBrand>
