@@ -3,9 +3,14 @@
   src: url(fonts/Corsa_Grotesk_Regular.otf);
 }
 
+@font-face {
+  font-family: Corsa Grotesk Thin;
+  src: url(fonts/Corsa_Grotesk_Thin.otf);
+}
+
 body {
   margin: 0 0 0 0;
-  font-family: 'Corsa Grotesk', sans-serif;
+  font-family: 'Corsa Grotesk', 'Corsa Grotesk Thin', sans-serif;
   font-size: 0;
 }
 
@@ -18,7 +23,8 @@ body {
   min-height: 75vh;
 }
 
-.footer {
+.footer,
+.applications-section {
   min-height: 90vh;
 }
 
@@ -37,6 +43,7 @@ body {
 
 .custom-badge {
   background-image: linear-gradient(-45deg, #e64242, #e67442);
+  font-weight: 300;
 }
 
 .card {

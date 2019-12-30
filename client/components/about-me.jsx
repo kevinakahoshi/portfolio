@@ -11,6 +11,7 @@ function AboutMe() {
       <Container className="container-md">
         <Row>
           <Col md="4">
+            <h3 className="heading mb-4 spread d-block d-sm-none text-center">About Me</h3>
             <img src="images/portrait.png" className="img-fluid" />
             <div className="my-3 d-flex justify-content-center">
               <a href="https://github.com/kevinakahoshi/"
@@ -56,7 +57,7 @@ function AboutMe() {
             </div>
           </Col>
           <Col md="8">
-            <div className="position-relative heading-div">
+            <div className="position-relative d-none d-sm-block">
               <h3 className="heading mb-4 spread">About Me</h3>
             </div>
             <p>I&#39;m Kevin Akahoshi, and I&#39;m a developer that has a passion for technology and coding.</p>
