@@ -103,8 +103,6 @@ class Carousel extends React.Component {
         <Row>
           <Col md="6" sm="12">
             <div className="position-relative">
-              <img src='./images/coffeine-carousel.jpg'
-                className="hidden-image img-fluid position-absolute border rounded" />
               <a href={currentProject.live}
                 target="_blank"
                 rel="noopener noreferrer"
