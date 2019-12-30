@@ -26,18 +26,18 @@ function Contact() {
         </Row>
         <div className="my-5">
           <Row className="justify-content-center">
-            <p className="text-center mb-md-0 mx-4">
+            <p className="text-center mb-md-0 mx-4 smooth-transition default-nav">
               <i className="fas fa-map-marker-alt mr-2" />Orange County
             </p>
             <p className="text-center mb-md-0 mx-4">
               <a href="tel:+19492027141"
-                className="pointer pb-2 default-color p-0">
+                className="pointer pb-2 default-nav p-0">
                 <i className="fas fa-phone-alt mr-2" />949-202-7141
               </a>
             </p>
             <p className="text-center mb-0 mx-4">
               <a href="mailto:kevin.akahoshi@gmail.com"
-                className="pointer pb-2 default-color p-0">
+                className="pointer pb-2 default-nav p-0">
                 <i className="fas fa-envelope mr-2" />kevin.akahoshi@gmail.com
               </a>
             </p>

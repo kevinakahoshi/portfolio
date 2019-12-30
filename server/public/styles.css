@@ -128,6 +128,11 @@ a.decoration-none:hover::after {
   border-color: #00000080;
 }
 
+.default-nav:hover {
+  color: #000000b3;
+  border-color: #000000b3;
+}
+
 .default-color {
   color: #212529;
   border-color: #212529;
