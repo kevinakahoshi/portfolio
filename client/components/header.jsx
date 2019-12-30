@@ -30,10 +30,10 @@ class Header extends React.Component {
   }
 
   render() {
-    let offset = -81;
+    let offset = -87;
 
     if (window.innerWidth < 768) {
-      offset = -281;
+      offset = -287;
     }
 
     return (
