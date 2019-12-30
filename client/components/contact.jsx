@@ -7,8 +7,8 @@ import {
 
 function Contact() {
   return (
-    <div className="content-div footer bg-white" id="contact">
-      <Container>
+    <div className="content-div footer bg-white d-flex" id="contact">
+      <Container className="m-auto">
         <Row>
           <Col sm="4" className="d-none d-sm-block">
             <div className="h-100 d-flex">

@@ -4,7 +4,6 @@ import {
   Row,
   Col,
   Fade
-  // Button
 } from 'reactstrap';
 
 function Hero() {
