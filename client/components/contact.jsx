@@ -16,7 +16,10 @@ function Contact() {
             </div>
           </Col>
           <Col sm="4">
-            <h3 className="text-center m-auto">Kevin Akahoshi</h3>
+            {/* <h3 className="text-center m-auto">Kevin Akahoshi</h3> */}
+            <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
+              className="img-fluid footer-logo"
+              alt="Kevin Akahoshi" />
           </Col>
           <Col sm="4" className="d-none d-sm-block">
             <div className="h-100 d-flex">
@@ -26,8 +29,13 @@ function Contact() {
         </Row>
         <div className="my-5">
           <Row className="justify-content-center">
-            <p className="text-center mb-md-0 mx-4 smooth-transition default-nav">
-              <i className="fas fa-map-marker-alt mr-2" />Orange County
+            <p className="text-center mb-md-0 mx-4">
+              <a href="https://www.google.com/maps/place/Orange+County,+CA/@33.6410077,-118.0496294,10z/data=!3m1!4b1!4m5!3m4!1s0x80dc925c54d5f7cf:0xdea6c3618ff0d607!8m2!3d33.7174708!4d-117.8311428"
+                className="pointer pb-2 default-nav p-0"
+                target="_blank"
+                rel="noopener noreferrer">
+                <i className="fas fa-map-marker-alt mr-2" />Orange County
+              </a>
             </p>
             <p className="text-center mb-md-0 mx-4">
               <a href="tel:+19492027141"
@@ -60,12 +68,13 @@ function Contact() {
                   <i className="fab fa-linkedin medium-font m-auto" />
                 </div>
               </a>
-              <a href="#"
+              <a href="./assets/Kevin_Akahoshi_-_2019.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-general pointer m-auto">
+                className="decoration-none default-color contact-general pointer m-auto"
+                download>
                 <div className="border-div d-flex">
-                  <i className="far fa-file medium-font m-auto" />
+                  <i className="far fa-file-alt medium-font m-auto" />
                 </div>
               </a>
             </div>

@@ -17,8 +17,7 @@ class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
-      windowWidth: window.innerWidth
+      isOpen: false
     };
     this.handleToggle = this.handleToggle.bind(this);
   }
@@ -32,22 +31,26 @@ class Header extends React.Component {
   render() {
     let offset = -87;
 
-    if (this.state.windowWidth < 768) {
+    if (window.innerWidth < 768) {
       offset = -287;
     }
 
     return (
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
-          <Navbar color="faded" light expand="md" className="row">
+          <Navbar color="faded" light
+            expand="md"
+            className="row py-0">
             <NavbarBrand onClick={() => {
               scroll.scrollToTop();
               if (this.state.isOpen) {
                 this.handleToggle();
               }
             }}
-            className="pointer">
-            Kevin Akahoshi
+            className="pointer decoration-none">
+              <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
+                className="img-fluid header-logo"
+                alt="K/A - Kevin Akahoshi" />
             </NavbarBrand>
             <NavbarToggler onClick={this.handleToggle} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>

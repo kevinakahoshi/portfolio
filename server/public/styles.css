@@ -365,6 +365,15 @@ a.decoration-none:hover::after {
   opacity: 0;
 }
 
+.header-logo {
+  max-width: 260px;
+  border: 3px solid #212529;
+}
+
+.footer-logo {
+  border: 3px solid #212529;
+}
+
 @media (max-width: 767px) {
   .hero-graphic {
     min-height: 50vh;
