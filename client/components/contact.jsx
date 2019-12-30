@@ -71,7 +71,7 @@ function Contact() {
             </div>
           </Row>
         </div>
-        <p className="mb-0 text-center h6">&#169; Kevin Akahoshi 2019</p>
+        <p className="mb-0 text-center h6">&copy; Kevin Akahoshi 2019</p>
       </Container>
     </div>
   );
