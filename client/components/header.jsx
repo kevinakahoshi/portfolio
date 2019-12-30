@@ -21,7 +21,14 @@ class Header extends React.Component {
   }
 
   handleNavClick(section) {
-    document.getElementById(section).scrollIntoView(true);
+    if (window.innerWidth < 768) {
+      this.handleToggle();
+      setTimeout(() => {
+        document.getElementById(section).scrollIntoView(true);
+      }, 250);
+    } else {
+      document.getElementById(section).scrollIntoView(true);
+    }
   }
 
   handleToggle() {
@@ -42,7 +49,7 @@ class Header extends React.Component {
             className="pointer">
             Kevin Akahoshi
             </NavbarBrand>
-            <NavbarToggler onClick={() => this.handleToggle()} navbar="true" />
+            <NavbarToggler onClick={this.handleToggle} navbar="true" />
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>

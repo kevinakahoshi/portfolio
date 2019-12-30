@@ -6,7 +6,6 @@ import {
 } from 'reactstrap';
 import {
   CSSTransition
-  // TransitionGroup
 } from 'react-transition-group';
 
 class Carousel extends React.Component {
@@ -21,7 +20,7 @@ class Carousel extends React.Component {
           image: './images/spontaneously-carousel.jpg',
           name: 'Spontaneous.ly',
           description: 'Spontaneous.ly is a full stack application for users that want to embark on a spontaneous adventure.  Users can enter their zipcode, add filtering for results, and choose activities based on the returned results.  By attending activities, users will gain points, as well as see the other users attending the activity.  If users don\'t like the activities they are presented, they have the option to spend their points to go back to the filtering screen, or cancel their reservation for a given activity',
-          technologies: ['React.js', 'HTML', 'CSS', 'PHP', 'MySQL'],
+          technologies: ['React.js', 'React Router', 'HTML', 'CSS', 'PHP', 'MySQL'],
           github: 'https://github.com/kevinakahoshi/spontaneous.ly',
           live: 'https://spontaneouslyapp.com/'
         },
@@ -52,7 +51,7 @@ class Carousel extends React.Component {
   }
 
   startTimer() {
-    this.interval = setInterval(this.nextHandler, 5000);
+    this.interval = setInterval(this.nextHandler, 10000);
   }
 
   stopTimer() {
@@ -105,17 +104,21 @@ class Carousel extends React.Component {
         classNames="fade">
         <Row>
           <Col md="6" sm="12">
-            <a href={currentProject.live}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="pointer decoration-none position-relative">
-              <Fade in={true}
-                tag="img"
-                src={currentProject.image}
-                className="img-fluid border rounded smooth-transition"
-                onMouseEnter={this.stopTimer}
-                onMouseLeave={this.startTimer} />
-            </a>
+            <div className="position-relative">
+              <img src='./images/coffeine-carousel.jpg'
+                className="hidden-image img-fluid position-absolute border rounded" />
+              <a href={currentProject.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pointer decoration-none position-relative">
+                <Fade in={true}
+                  tag="img"
+                  src={currentProject.image}
+                  className="img-fluid border rounded smooth-transition"
+                  onMouseEnter={this.stopTimer}
+                  onMouseLeave={this.startTimer} />
+              </a>
+            </div>
             <div className="my-3 d-flex">
               <div className="d-flex">
                 <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}
