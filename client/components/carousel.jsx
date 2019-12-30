@@ -51,7 +51,7 @@ class Carousel extends React.Component {
   }
 
   startTimer() {
-    // this.interval = setInterval(this.nextHandler, 10000);
+    this.interval = setInterval(this.nextHandler, 10000);
   }
 
   stopTimer() {
@@ -151,9 +151,6 @@ class Carousel extends React.Component {
                 <h6 className="h5 smooth-transition">{currentProject.name}</h6>
                 <p className="smooth-transition">{currentProject.description}</p>
                 <h6 className="h5 smooth-transition">Developed Using</h6>
-                {/* <ul>
-                  {technologies}
-                </ul> */}
                 <div>
                   {technologies}
                 </div>
