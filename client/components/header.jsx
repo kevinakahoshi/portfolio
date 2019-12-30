@@ -6,42 +6,42 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  NavLink
+  NavItem
 } from 'reactstrap';
+import {
+  Link,
+  animateScroll as scroll
+} from 'react-scroll';
 
 class Header extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false
+      isOpen: false,
+      windowWidth: window.innerWidth
     };
-    this.handleNavClick = this.handleNavClick.bind(this);
     this.handleToggle = this.handleToggle.bind(this);
   }
 
-  handleNavClick(section) {
+  handleToggle() {
     if (window.innerWidth < 768) {
-      this.handleToggle();
-      setTimeout(() => {
-        document.getElementById(section).scrollIntoView(true);
-      }, 250);
-    } else {
-      document.getElementById(section).scrollIntoView(true);
+      this.setState({ isOpen: !this.state.isOpen });
     }
   }
 
-  handleToggle() {
-    this.setState({ isOpen: !this.state.isOpen });
-  }
-
   render() {
+    let offset = -87;
+
+    if (this.state.windowWidth < 768) {
+      offset = -287;
+    }
+
     return (
       <>
         <Container fluid={true} className="py-3 shadow-lg bg-white sticky-top">
           <Navbar color="faded" light expand="md" className="row">
             <NavbarBrand onClick={() => {
-              window.scrollTo(0, 0);
+              scroll.scrollToTop();
               if (this.state.isOpen) {
                 this.handleToggle();
               }
@@ -53,19 +53,64 @@ class Header extends React.Component {
             <Collapse isOpen={this.state.isOpen} navbar>
               <Nav className="ml-auto" navbar>
                 <NavItem>
-                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('about')}>About Me</NavLink>
+                  <Link activeClass="active"
+                    to="about"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer px-0 nav-link"
+                    onClick={this.handleToggle}>
+                      About Me
+                  </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('skills')}>Skills</NavLink>
+                  <Link activeClass="active"
+                    to="skills"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer px-0 nav-link"
+                    onClick={this.handleToggle}>
+                    Skills
+                  </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('tools')}>Tools</NavLink>
+                  <Link activeClass="active"
+                    to="tools"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer px-0 nav-link"
+                    onClick={this.handleToggle}>
+                    Tools
+                  </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('applications')}>Applications</NavLink>
+                  <Link activeClass="active"
+                    to="applications"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer px-0 nav-link"
+                    onClick={this.handleToggle}>
+                    Applications
+                  </Link>
                 </NavItem>
                 <NavItem className="ml-md-5">
-                  <NavLink className="pointer px-0" onClick={() => this.handleNavClick('contact')}>Contact</NavLink>
+                  <Link activeClass="active"
+                    to="contact"
+                    spy={true}
+                    smooth={true}
+                    offset={offset}
+                    duration={1000}
+                    className="pointer px-0 nav-link"
+                    onClick={this.handleToggle}>
+                    Contact
+                  </Link>
                 </NavItem>
               </Nav>
             </Collapse>

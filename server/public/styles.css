@@ -1,16 +1,11 @@
 @font-face {
-  font-family: 'Corsa Grotesk', sans-serif;
-  src: url('./fonts/Corsa_Grotesk_Regular.otf');
-}
-
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 87px;
+  font-family: Corsa Grotesk;
+  src: url(fonts/Corsa_Grotesk_Regular.otf);
 }
 
 body {
   margin: 0 0 0 0;
-  font-family: 'Corsa Grotesk';
+  font-family: 'Corsa Grotesk', sans-serif;
   font-size: 0;
 }
 
@@ -20,6 +15,10 @@ body {
 }
 
 .main-hero {
+  min-height: 75vh;
+}
+
+.footer {
   min-height: 75vh;
 }
 
@@ -34,6 +33,10 @@ body {
 
 .topographic {
   background: #fff;
+}
+
+.custom-badge {
+  background-image: linear-gradient(-45deg, #e64242, #e67442);
 }
 
 .card {

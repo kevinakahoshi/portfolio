@@ -51,7 +51,7 @@ class Carousel extends React.Component {
   }
 
   startTimer() {
-    this.interval = setInterval(this.nextHandler, 10000);
+    // this.interval = setInterval(this.nextHandler, 10000);
   }
 
   stopTimer() {
@@ -91,9 +91,7 @@ class Carousel extends React.Component {
   render() {
     const currentProject = this.state.projects[this.state.currentProject];
     const technologies = currentProject.technologies.map((technology, index) => {
-      return <li key={index}>
-        {technology}
-      </li>;
+      return <span key={index} className="badge custom-badge text-white mr-2">{technology}</span>;
     });
 
     return (
@@ -153,9 +151,12 @@ class Carousel extends React.Component {
                 <h6 className="h5 smooth-transition">{currentProject.name}</h6>
                 <p className="smooth-transition">{currentProject.description}</p>
                 <h6 className="h5 smooth-transition">Developed Using</h6>
-                <ul>
+                {/* <ul>
                   {technologies}
-                </ul>
+                </ul> */}
+                <div>
+                  {technologies}
+                </div>
                 <a href={currentProject.github}
                   className="py-2 mr-3"
                   rel="noopener noreferrer"
