@@ -5,7 +5,7 @@ import AboutMe from './about-me';
 import Skills from './skills';
 import Tools from './tools';
 import Applications from './applications';
-import Contact from './Contact';
+import Contact from './contact';
 
 class App extends React.Component {
 
