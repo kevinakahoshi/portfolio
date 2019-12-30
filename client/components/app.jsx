@@ -8,11 +8,6 @@ import Applications from './applications';
 import Contact from './Contact';
 
 class App extends React.Component {
-  // constructor() {
-  //   this.state = {
-
-  //   };
-  // }
 
   render() {
     return (

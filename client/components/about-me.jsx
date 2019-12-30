@@ -12,12 +12,12 @@ function AboutMe() {
         <Row>
           <Col md="4">
             <img src="images/portrait.png" className="img-fluid" />
-            <div className="my-3 d-flex justify-content-around">
+            <div className="my-3 d-flex justify-content-center">
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-github pointer">
-                <div className="border-div-small d-flex">
+                <div className="border-div-small d-flex mr-2">
                   <i className="fab fa-github small-font m-auto" />
                 </div>
               </a>
@@ -25,7 +25,7 @@ function AboutMe() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-linkedin pointer">
-                <div className="border-div-small d-flex">
+                <div className="border-div-small d-flex mr-2">
                   <i className="fab fa-linkedin small-font m-auto" />
                 </div>
               </a>
@@ -33,7 +33,7 @@ function AboutMe() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer">
-                <div className="border-div-small d-flex">
+                <div className="border-div-small d-flex mr-2">
                   <i className="fas fa-phone-alt small-font m-auto" />
                 </div>
               </a>
@@ -41,7 +41,7 @@ function AboutMe() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer">
-                <div className="border-div-small d-flex">
+                <div className="border-div-small d-flex mr-2">
                   <i className="far fa-envelope small-font m-auto" />
                 </div>
               </a>
