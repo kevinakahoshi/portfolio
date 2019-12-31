@@ -9,9 +9,12 @@ import {
 function Hero() {
   return (
     <div className="main-hero d-flex bg-white">
-      <Container className="m-auto" fluid>
+      <Container
+        className="m-auto"
+        fluid>
         <Row>
-          <Col md="6" className="d-flex order-2 order-sm-1">
+          <Col md="6"
+            className="d-flex order-2 order-sm-1">
             <div className="m-auto">
               <Fade tag="h1"
                 className="spread">Kevin Akahoshi</Fade>
@@ -19,8 +22,12 @@ function Hero() {
                 className="text-muted h3">Full Stack Developer</Fade>
             </div>
           </Col>
-          <Col md="6" className="p-0 order-1 order-sm-2">
-            <Fade tag="img" src="./images/apps-resize.png" className="img-fluid" />
+          <Col md="6"
+            className="p-0 order-1 order-sm-2">
+            <Fade tag="img"
+              src="/images/apps-resize.png"
+              className="img-fluid"
+              alt="Mocks of the different apps made on mobile phones." />
           </Col>
         </Row>
       </Container>

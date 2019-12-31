@@ -12,12 +12,15 @@ function AboutMe() {
         <Row>
           <Col md="4">
             <h3 className="heading mb-4 spread d-block d-sm-none text-center">About Me</h3>
-            <img src="images/portrait.png" className="img-fluid" />
+            <img src="images/portrait.png"
+              className="img-fluid"
+              alt="Portrait photo of Kevin Akahoshi with red/orange gradient of topographic pattern in the background" />
             <div className="my-3 d-flex justify-content-center">
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-github pointer">
+                className="decoration-none default-nav contact-github pointer"
+                aria-label="Github">
                 <div className="border-div-small d-flex mr-2">
                   <i className="fab fa-github small-font m-auto" />
                 </div>
@@ -25,7 +28,8 @@ function AboutMe() {
               <a href="https://www.linkedin.com/in/kevin-akahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-linkedin pointer">
+                className="decoration-none default-nav contact-linkedin pointer"
+                aria-label="LinkedIn">
                 <div className="border-div-small d-flex mr-2">
                   <i className="fab fa-linkedin small-font m-auto" />
                 </div>
@@ -33,7 +37,8 @@ function AboutMe() {
               <a href="tel:+19492027141"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer">
+                className="decoration-none default-nav contact-general pointer"
+                aria-label="Phone">
                 <div className="border-div-small d-flex mr-2">
                   <i className="fas fa-phone-alt small-font m-auto" />
                 </div>
@@ -41,15 +46,17 @@ function AboutMe() {
               <a href="mailto:kevin.akahoshi@gmail.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-nav contact-general pointer">
+                className="decoration-none default-nav contact-general pointer"
+                aria-label="Email">
                 <div className="border-div-small d-flex mr-2">
                   <i className="far fa-envelope small-font m-auto" />
                 </div>
               </a>
-              <a href="./assets/Kevin_Akahoshi_-_2019.pdf"
+              <a href="/assets/Kevin_Akahoshi.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-nav contact-general pointer"
+                aria-label="Resume Download"
                 download>
                 <div className="border-div-small d-flex">
                   <i className="far fa-file-alt small-font m-auto" />
