@@ -55,7 +55,8 @@ function Contact() {
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-github pointer m-auto">
+                className="decoration-none default-color contact-github pointer m-auto"
+                aria-label="Github">
                 <div className="border-div d-flex">
                   <i className="fab fa-github medium-font m-auto" />
                 </div>
@@ -63,15 +64,17 @@ function Contact() {
               <a href="https://www.linkedin.com/in/kevin-akahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-linkedin pointer m-auto">
+                className="decoration-none default-color contact-linkedin pointer m-auto"
+                aria-label="LinkedIn">
                 <div className="border-div d-flex mx-4 ">
                   <i className="fab fa-linkedin medium-font m-auto" />
                 </div>
               </a>
-              <a href="./assets/Kevin_Akahoshi_-_2019.pdf"
+              <a href="/assets/Kevin_Akahoshi.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="decoration-none default-color contact-general pointer m-auto"
+                aria-label="Resume Download"
                 download>
                 <div className="border-div d-flex">
                   <i className="far fa-file-alt medium-font m-auto" />
