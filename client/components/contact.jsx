@@ -64,9 +64,9 @@ function Contact() {
               <a href="https://www.linkedin.com/in/kevin-akahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-linkedin pointer m-auto"
+                className="decoration-none default-color contact-linkedin pointer mx-4 my-auto"
                 aria-label="LinkedIn">
-                <div className="border-div d-flex mx-4 ">
+                <div className="border-div d-flex">
                   <i className="fab fa-linkedin medium-font m-auto" />
                 </div>
               </a>

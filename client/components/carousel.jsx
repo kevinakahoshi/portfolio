@@ -121,18 +121,21 @@ class Carousel extends React.Component {
             </div>
             <div className="my-3 d-flex">
               <div className="d-flex">
-                <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}
+                <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
                   onClick={() => this.setState({ currentProject: 0 })}
                   onMouseEnter={this.stopTimer}
-                  onMouseLeave={this.startTimer} />
-                <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} my-auto mr-3 pointer`}
+                  onMouseLeave={this.startTimer}
+                  aria-label="First Project" />
+                <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
                   onClick={() => this.setState({ currentProject: 1 })}
                   onMouseEnter={this.stopTimer}
-                  onMouseLeave={this.startTimer} />
-                <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} my-auto pointer`}
+                  onMouseLeave={this.startTimer}
+                  aria-label="Second Project" />
+                <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto pointer`}
                   onClick={() => this.setState({ currentProject: 2 })}
                   onMouseEnter={this.stopTimer}
-                  onMouseLeave={this.startTimer} />
+                  onMouseLeave={this.startTimer}
+                  aria-label="Third Project" />
               </div>
               <div className="d-flex ml-auto carousel-controls-div">
                 <button className="carousel-button smooth-transition pointer bg-white d-flex mr-3 rounded"

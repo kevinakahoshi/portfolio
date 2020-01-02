@@ -215,6 +215,11 @@ a.decoration-none:hover::after {
   border-color: #979797;
 }
 
+.carousel-indicator:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, .5);
+}
+
 .card-body * {
   transition: .3s all;
   width: fit-content;
