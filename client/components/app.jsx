@@ -8,6 +8,24 @@ import Applications from './applications';
 import Contact from './contact';
 
 class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      year: null
+    };
+
+    this.getYear = this.getYear.bind(this);
+  }
+
+  getYear() {
+    const date = new Date();
+    const year = date.getFullYear();
+    this.setState({ year });
+  }
+
+  componentDidMount() {
+    this.getYear();
+  }
 
   render() {
     return (
@@ -18,7 +36,7 @@ class App extends React.Component {
         <Skills />
         <Tools />
         <Applications />
-        <Contact />
+        <Contact year={this.state.year} />
       </>
     );
   }

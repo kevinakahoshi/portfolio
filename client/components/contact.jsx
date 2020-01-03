@@ -5,7 +5,7 @@ import {
   Col
 } from 'reactstrap';
 
-function Contact() {
+function Contact(props) {
   return (
     <div className="content-div footer bg-white d-flex" id="contact">
       <Container className="m-auto">
@@ -16,7 +16,6 @@ function Contact() {
             </div>
           </Col>
           <Col sm="4">
-            {/* <h3 className="text-center m-auto">Kevin Akahoshi</h3> */}
             <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
               className="img-fluid footer-logo"
               alt="Kevin Akahoshi" />
@@ -83,7 +82,7 @@ function Contact() {
             </div>
           </Row>
         </div>
-        <p className="mb-0 text-center h6">&copy; Kevin Akahoshi 2019</p>
+        <p className="mb-0 text-center h6">&copy; Kevin Akahoshi {props.year}</p>
       </Container>
     </div>
   );
