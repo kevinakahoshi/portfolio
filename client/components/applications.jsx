@@ -2,7 +2,8 @@ import React from 'react';
 import {
   Container,
   Row,
-  Col
+  Col,
+  Tooltip
 } from 'reactstrap';
 import Carousel from './applications-carousel';
 import Grid from './applications-grid';
@@ -12,6 +13,7 @@ class Applications extends React.Component {
     super();
     this.state = {
       view: 'grid',
+      iconView: null,
       projects: [
         {
           id: 1,
@@ -47,6 +49,7 @@ class Applications extends React.Component {
     };
 
     this.toggleView = this.toggleView.bind(this);
+    this.toggleTooltip = this.toggleTooltip.bind(this);
   }
 
   toggleView() {
@@ -57,6 +60,10 @@ class Applications extends React.Component {
     }
   }
 
+  toggleTooltip(iconView) {
+    this.setState({ tooltipOpen: !this.state.tooltipOpen, iconView });
+  }
+
   render() {
     return (
       <div className="applications-section bg-white" id="applications">
@@ -65,20 +72,42 @@ class Applications extends React.Component {
             <Col xs="12">
               <h3 className="text-center heading mb-4 spread">Applications</h3>
               <div className="d-flex flex-direction-row">
-                <div className="d-flex mx-auto mb-3">
+                <div className="d-flex mx-auto mb-4">
                   <div className="mr-3">
-                    <i className="fas fa-grip-horizontal small-font default-nav pointer"
+                    <i className="fas fa-grip-horizontal small-font default-nav pointer smooth-transition"
+                      id="grid-view"
+                      aria-label="Grid View"
                       onClick={() => this.setState({ view: 'grid' })} />
+                    <Tooltip placement="left"
+                      isOpen={this.state.tooltipOpen && this.state.iconView === 'grid'}
+                      target="grid-view"
+                      toggle={() => {
+                        this.toggleTooltip('grid');
+                      }}>
+                        Grid View
+                    </Tooltip>
                   </div>
                   <div>
                     <div className="toggle-outer bg-secondary rounded pointer"
+                      id="toggle-view"
+                      aria-label="Toggle View"
                       onClick={this.toggleView}>
-                      <div className={`toggle-inner bg-white border rounded ${this.state.view === 'carousel' ? 'right' : 'left'}`} />
+                      <div className={`toggle-inner bg-white border rounded m-0 ${this.state.view === 'carousel' ? 'right' : 'left'}`} />
                     </div>
                   </div>
                   <div className="ml-3">
-                    <i className="far fa-images small-font default-nav pointer"
+                    <i className="far fa-images small-font default-nav pointer smooth-transition"
+                      id="carousel-view"
+                      aria-label="Carousel View"
                       onClick={() => this.setState({ view: 'carousel' })} />
+                    <Tooltip placement="right"
+                      isOpen={this.state.tooltipOpen && this.state.iconView === 'carousel'}
+                      target="carousel-view"
+                      toggle={() => {
+                        this.toggleTooltip('carousel');
+                      }}>
+                      Carousel
+                    </Tooltip>
                   </div>
                 </div>
               </div>

@@ -88,7 +88,7 @@ p {
 }
 
 a {
-  color: #e64242;
+  /* color: #e64242; */
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -97,7 +97,7 @@ a {
 
 a:hover {
   transition: .3s all;
-  color: #e64242;
+  /* color: #e64242; */
   text-decoration: none;
 }
 
@@ -131,6 +131,13 @@ a:hover::after,
 a.decoration-none:hover::before,
 a.decoration-none:hover::after {
   display: none;
+}
+
+.icon-active {
+  background: -webkit-linear-gradient(-45deg, #e64242, #e67442);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: .3s all;
 }
 
 .btn-share {
@@ -328,7 +335,7 @@ a.decoration-none:hover::after {
 }
 
 .contact-resume:hover,
-.contact-resume:hover>* {
+.contact-resume:hover > * {
   color: #e64242;
   border-color: #e64242;
   transition: .3s all;
