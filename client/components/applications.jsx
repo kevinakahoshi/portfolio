@@ -66,7 +66,8 @@ class Applications extends React.Component {
 
   render() {
     return (
-      <div className="applications-section bg-white" id="applications">
+      <div className="applications-section bg-white"
+        id="applications">
         <Container>
           <Row>
             <Col xs="12">
@@ -80,6 +81,7 @@ class Applications extends React.Component {
                       onClick={() => this.setState({ view: 'grid' })} />
                     <Tooltip placement="left"
                       isOpen={this.state.tooltipOpen && this.state.iconView === 'grid'}
+                      className="d-none d-sm-block"
                       target="grid-view"
                       toggle={() => {
                         this.toggleTooltip('grid');
@@ -102,6 +104,7 @@ class Applications extends React.Component {
                       onClick={() => this.setState({ view: 'carousel' })} />
                     <Tooltip placement="right"
                       isOpen={this.state.tooltipOpen && this.state.iconView === 'carousel'}
+                      className="d-none d-sm-block"
                       target="carousel-view"
                       toggle={() => {
                         this.toggleTooltip('carousel');

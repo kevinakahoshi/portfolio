@@ -88,7 +88,7 @@ p {
 }
 
 a {
-  /* color: #e64242; */
+  color: #e64242;
   text-decoration: none;
   display: inline-block;
   position: relative;
@@ -97,7 +97,7 @@ a {
 
 a:hover {
   transition: .3s all;
-  /* color: #e64242; */
+  color: #e64242;
   text-decoration: none;
 }
 
@@ -135,6 +135,7 @@ a.decoration-none:hover::after {
 
 .icon-active {
   background: -webkit-linear-gradient(-45deg, #e64242, #e67442);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: .3s all;
