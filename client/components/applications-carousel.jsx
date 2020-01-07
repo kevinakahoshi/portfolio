@@ -132,16 +132,16 @@ class Carousel extends React.Component {
                   {technologies}
                 </div>
                 <a href={currentProject.github}
-                  className="py-2 mr-3"
+                  className="py-2 mr-3 icon-active"
                   rel="noopener noreferrer"
                   target="_blank">
-                  <i className="fab fa-github mr-2"/>Github
+                  <i className="fab fa-github mr-2 icon-active"/>Github
                 </a>|
                 <a href={currentProject.live}
-                  className="py-2 ml-3"
+                  className="py-2 ml-3 icon-active"
                   rel="noopener noreferrer"
                   target="_blank">
-                  <i className="far fa-window-restore mr-2" />Live
+                  <i className="far fa-window-restore mr-2 icon-active" />Live
                 </a>
               </Fade>
             </div>
