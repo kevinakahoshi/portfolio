@@ -30,7 +30,7 @@ class Applications extends React.Component {
           image: '/images/coffeine-carousel.jpg',
           alt: 'Coffee bean roasting machine filled with fresh coffee beans with a text overlay that says Coffeine Supply Co.',
           name: 'Coffeine Supply Co',
-          description: 'Coffeine Supply Co is a full stack applicaiton developed for coffee lovers interested in coffee supplies.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
+          description: 'Coffeine Supply Co is a full stack application developed for coffee lovers interested in coffee supplies.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
           technologies: ['React.js', 'JavaScript', 'HTML', 'CSS', 'PHP', 'MySQL'],
           github: 'https://github.com/kevinakahoshi/coffeine-supply-co',
           live: 'https://coffeine.kevinakahoshi.com/'
@@ -66,7 +66,8 @@ class Applications extends React.Component {
 
   render() {
     return (
-      <div className="applications-section bg-white" id="applications">
+      <div className="applications-section bg-white"
+        id="applications">
         <Container>
           <Row>
             <Col xs="12">
@@ -80,6 +81,7 @@ class Applications extends React.Component {
                       onClick={() => this.setState({ view: 'grid' })} />
                     <Tooltip placement="left"
                       isOpen={this.state.tooltipOpen && this.state.iconView === 'grid'}
+                      className="d-none d-sm-block"
                       target="grid-view"
                       toggle={() => {
                         this.toggleTooltip('grid');
@@ -102,6 +104,7 @@ class Applications extends React.Component {
                       onClick={() => this.setState({ view: 'carousel' })} />
                     <Tooltip placement="right"
                       isOpen={this.state.tooltipOpen && this.state.iconView === 'carousel'}
+                      className="d-none d-sm-block"
                       target="carousel-view"
                       toggle={() => {
                         this.toggleTooltip('carousel');
