@@ -30,7 +30,7 @@ class Applications extends React.Component {
           image: '/images/coffeine-carousel.jpg',
           alt: 'Coffee bean roasting machine filled with fresh coffee beans with a text overlay that says Coffeine Supply Co.',
           name: 'Coffeine Supply Co',
-          description: 'Coffeine Supply Co is a full stack applicaiton developed for coffee lovers interested in coffee supplies.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
+          description: 'Coffeine Supply Co is a full stack application developed for coffee lovers interested in coffee supplies.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
           technologies: ['React.js', 'JavaScript', 'HTML', 'CSS', 'PHP', 'MySQL'],
           github: 'https://github.com/kevinakahoshi/coffeine-supply-co',
           live: 'https://coffeine.kevinakahoshi.com/'
