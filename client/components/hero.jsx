@@ -22,8 +22,8 @@ function Hero() {
           <Col md="6"
             className="p-0 order-1 order-sm-2">
             <img
-              src="/images/apps-resize.png"
-              className="img-fluid fade-in slide-in-10"
+              src="/images/apps-resize.jpg"
+              className="hero-image fade-in slide-in-10"
               alt="Mocks of the different apps made on mobile phones." />
           </Col>
         </Row>
