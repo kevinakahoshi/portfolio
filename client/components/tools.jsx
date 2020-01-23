@@ -15,11 +15,11 @@ function Tools() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 text-white spread">Tools</h3>
+              <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-github-plain large-font text-center d-block" />
                 <div className="my-3">
@@ -29,7 +29,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicons-aws large-font text-center d-block" />
                 <div className="my-3">
@@ -39,7 +39,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicons-npm large-font text-center d-block" />
                 <div className="my-3">
@@ -49,7 +49,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-webpack-plain large-font text-center d-block" />
                 <div className="my-3">
@@ -59,7 +59,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-babel-plain large-font text-center d-block" />
                 <div className="my-3">
@@ -69,7 +69,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-apache-line large-font text-center d-block" />
                 <div className="my-3">
@@ -79,7 +79,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicons-chrome large-font text-center d-block" />
                 <div className="my-3">
@@ -89,7 +89,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicons-jira large-font text-center d-block" />
                 <div className="my-3">
@@ -99,7 +99,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-visualstudio-plain large-font text-center d-block" />
                 <div className="my-3">
@@ -109,7 +109,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="fab fa-figma large-font text-center d-block" />
                 <div className="my-3">
@@ -119,7 +119,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicons-photoshop large-font text-center d-block" />
                 <div className="my-3">
@@ -129,7 +129,7 @@ function Tools() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none bg-transparent text-white">
+            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
                 <i className="devicons devicon-slack-plain large-font text-center d-block" />
                 <div className="my-3">

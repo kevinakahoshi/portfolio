@@ -17,7 +17,7 @@ function Contact(props) {
           </Col>
           <Col sm="4">
             <img src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
-              className="img-fluid footer-logo"
+              className="img-fluid footer-logo fade-in"
               alt="Kevin Akahoshi" />
           </Col>
           <Col sm="4" className="d-none d-sm-block">

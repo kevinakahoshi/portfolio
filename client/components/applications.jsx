@@ -71,11 +71,11 @@ class Applications extends React.Component {
         <Container>
           <Row>
             <Col xs="12">
-              <h3 className="text-center heading mb-4 spread">Applications</h3>
-              <div className="d-flex flex-direction-row">
+              <h3 className="text-center heading mb-4 spread slide-in-10">Applications</h3>
+              <div className="d-flex flex-direction-row slide-in-10">
                 <div className="d-flex mx-auto mb-4">
                   <div className="mr-3">
-                    <i className="fas fa-grip-horizontal small-font default-nav pointer smooth-transition"
+                    <i className="fas fa-grip-horizontal small-font default-nav pointer smooth-transition slide-in-10"
                       id="grid-view"
                       aria-label="Grid View"
                       onClick={() => this.setState({ view: 'grid' })} />
