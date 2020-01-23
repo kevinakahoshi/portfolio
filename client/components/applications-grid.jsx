@@ -1,8 +1,7 @@
 import React from 'react';
 import {
   Row,
-  Col,
-  Fade
+  Col
 } from 'reactstrap';
 
 function Grid(props) {
@@ -25,8 +24,8 @@ function getProjects(projectsArray) {
         sm="12"
         key={index}
         className="mb-3">
-        <Fade tag="div"
-          className="card rounded border mb-3 h-100">
+        <div
+          className="card rounded border mb-3 h-100 slide-in-10">
           <div className="card-body">
             <a href={project.live}
               target="_blank"
@@ -46,18 +45,18 @@ function getProjects(projectsArray) {
             </div>
           </div>
           <div className="mt-3 card-footer bg-white">
-            <a className="btn btn-share default-nav decoration-none mr-3"
+            <a className="btn btn-share default-nav decoration-none fade-in slide-in mr-3"
               target="_blank"
               rel="noopener noreferrer"
               href={project.github}>
               <i className="fab fa-github mr-2" />Github</a>
-            <a className="btn btn-share default-nav decoration-none"
+            <a className="btn btn-share default-nav decoration-none fade-in slide-in"
               target="_blank"
               rel="noopener noreferrer"
               href={project.live}>
               <i className="far fa-window-restore mr-2" />Live</a>
           </div>
-        </Fade>
+        </div>
       </Col>
     );
   });

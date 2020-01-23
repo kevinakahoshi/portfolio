@@ -6,8 +6,7 @@ import {
   NavbarToggler,
   NavbarBrand,
   Nav,
-  NavItem,
-  Fade
+  NavItem
 } from 'reactstrap';
 import {
   Link,
@@ -49,8 +48,7 @@ class Header extends React.Component {
               }
             }}
             className="pointer decoration-none">
-              <Fade
-                tag="img"
+              <img
                 src="./images/Kevin-Akahoshi-Horizontal-Logo-(No-Border).png"
                 className="img-fluid header-logo"
                 alt="K/A - Kevin Akahoshi" />

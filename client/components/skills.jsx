@@ -15,11 +15,11 @@ function Skills() {
         <Row className="mobile-six-row">
           <Col xs="12">
             <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 spread">Technical Skills</h3>
+              <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>
             </div>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-javascript_badge large-font text-center d-block position-relative">
                   <div className="background-test position-absolute"></div>
@@ -31,7 +31,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-react large-font text-center d-block" />
                 <div className="my-3">
@@ -41,7 +41,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-jquery large-font text-center d-block" />
                 <div className="my-3">
@@ -51,7 +51,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicon-php-plain colored large-font text-center d-block" />
                 <div className="my-3">
@@ -61,7 +61,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-mysql colored large-font text-center d-block" />
                 <div className="my-3">
@@ -71,7 +71,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-html5 large-font text-center d-block" />
                 <div className="my-3">
@@ -81,7 +81,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-css3 large-font text-center d-block" />
                 <div className="my-3">
@@ -91,7 +91,7 @@ function Skills() {
             </Card>
           </Col>
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 skills-card">
+            <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <i className="devicons devicons-bootstrap large-font text-center d-block" />
                 <div className="my-3">
