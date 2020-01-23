@@ -24,6 +24,11 @@ body {
   min-height: 75vh;
 }
 
+.hero-image {
+  max-width: 1200px;
+  width: 100%;
+}
+
 .footer,
 .applications-section {
   min-height: 90vh;
@@ -358,6 +363,7 @@ a.decoration-none:hover::after {
 .topographic-2 {
   background-image: linear-gradient(-45deg, #e64242ef, #e67342ef), url('./images/Topographic-Map-Pattern-5.png');
   background-size: contain;
+  background-position: center;
   background-repeat: repeat;
 }
 
@@ -374,32 +380,32 @@ a.decoration-none:hover::after {
 }
 
 .fade-in {
-  animation: fade-in 1s;
+  animation: fade-in .75s;
   animation-fill-mode: forwards;
 }
 
 .fade-out {
-  animation: fade-out 1s;
+  animation: fade-out .75s;
   animation-fill-mode: forwards;
 }
 
 .slide-in {
-  animation: slide-in 1s;
+  animation: slide-in .75s;
   animation-fill-mode: forwards;
 }
 
 .slide-out {
-  animation: slide-out 1s;
+  animation: slide-out .75s;
   animation-fill-mode: forwards;
 }
 
 .slide-in-10 {
-  animation: slide-in-10 1s;
+  animation: slide-in-10 .75s;
   animation-fill-mode: forwards;
 }
 
 .slide-out-10 {
-  animation: slide-out-10 1s;
+  animation: slide-out-10 .75s;
   animation-fill-mode: forwards;
 }
 

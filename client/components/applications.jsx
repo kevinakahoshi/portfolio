@@ -12,7 +12,7 @@ class Applications extends React.Component {
   constructor() {
     super();
     this.state = {
-      view: 'grid',
+      view: 'carousel',
       iconView: null,
       projects: [
         {

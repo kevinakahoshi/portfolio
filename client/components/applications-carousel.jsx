@@ -14,50 +14,33 @@ class Carousel extends React.Component {
     };
     this.startTimer = this.startTimer.bind(this);
     this.stopTimer = this.stopTimer.bind(this);
-    this.previousHandler = this.previousHandler.bind(this);
-    this.nextHandler = this.nextHandler.bind(this);
+    this.slideChange = this.slideChange.bind(this);
+    this.interval = null;
   }
 
   startTimer() {
-    this.interval = setInterval(this.nextHandler, 9000);
+    this.stopTimer();
+    let position = this.state.currentProject + 1;
+    if (position === 3) {
+      position = 0;
+    }
+    this.interval = setInterval(() => this.slideChange(position), 9500);
   }
 
   stopTimer() {
     clearInterval(this.interval);
   }
 
-  fadeOutToggler() {
-    this.setState({ fadeOut: !this.state.fadeOut });
-  }
-
-  previousHandler() {
+  slideChange(newPosition) {
     const currentState = JSON.parse(JSON.stringify(this.state));
     this.stopTimer();
     this.setState({ fadeOut: true });
     setTimeout(() => {
-      currentState.currentProject--;
-      if (currentState.currentProject === -1) {
-        currentState.currentProject = 2;
-      }
+      currentState.currentProject = newPosition;
+      currentState.fadeOut = false;
       this.setState(currentState);
       this.startTimer();
-      this.setState({ fadeOut: false });
-    }, 1000);
-  }
-
-  nextHandler() {
-    const currentState = JSON.parse(JSON.stringify(this.state));
-    this.stopTimer();
-    this.setState({ fadeOut: true });
-    setTimeout(() => {
-      currentState.currentProject++;
-      if (currentState.currentProject === 3) {
-        currentState.currentProject = 0;
-      }
-      this.setState(currentState);
-      this.startTimer();
-      this.setState({ fadeOut: false });
-    }, 1000);
+    }, 500);
   }
 
   componentDidMount() {
@@ -94,29 +77,41 @@ class Carousel extends React.Component {
           <div className="my-3 d-flex">
             <div className="d-flex">
               <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
-                onClick={() => this.setState({ currentProject: 0 })}
+                onClick={() => this.slideChange(0)}
                 onMouseEnter={this.stopTimer}
                 onMouseLeave={this.startTimer}
                 aria-label="First Project" />
               <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
-                onClick={() => this.setState({ currentProject: 1 })}
+                onClick={() => this.slideChange(1)}
                 onMouseEnter={this.stopTimer}
                 onMouseLeave={this.startTimer}
                 aria-label="Second Project" />
               <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto pointer`}
-                onClick={() => this.setState({ currentProject: 2 })}
+                onClick={() => this.slideChange(2)}
                 onMouseEnter={this.stopTimer}
                 onMouseLeave={this.startTimer}
                 aria-label="Third Project" />
             </div>
             <div className="d-flex ml-auto carousel-controls-div">
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-3 rounded"
-                onClick={this.previousHandler}
+                onClick={() => {
+                  let nextProject = this.state.currentProject - 1;
+                  if (nextProject === -1) {
+                    nextProject = 2;
+                  }
+                  this.slideChange(nextProject);
+                }}
                 aria-label="Previous" >
                 <i className="fas fa-chevron-left m-auto" />
               </button>
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-0 rounded"
-                onClick={this.nextHandler}
+                onClick={() => {
+                  let nextProject = this.state.currentProject + 1;
+                  if (nextProject === 3) {
+                    nextProject = 0;
+                  }
+                  this.slideChange(nextProject);
+                }}
                 aria-label="Next" >
                 <i className="fas fa-chevron-right m-auto" />
               </button>
