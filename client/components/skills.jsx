@@ -21,9 +21,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-javascript_badge large-font text-center d-block position-relative">
-                  <div className="background-test position-absolute"></div>
-                </i>
+                <img src="./assets/icons/javascript.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">JavaScript</h4>
                 </div>
@@ -33,7 +32,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-react large-font text-center d-block" />
+                <img src="./assets/icons/react.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">React.js</h4>
                 </div>
@@ -43,7 +43,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-jquery large-font text-center d-block" />
+                <img src="./assets/icons/jquery.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">jQuery</h4>
                 </div>
@@ -53,7 +54,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicon-php-plain colored large-font text-center d-block" />
+                <img src="./assets/icons/php.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">PHP</h4>
                 </div>
@@ -63,7 +65,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-mysql colored large-font text-center d-block" />
+                <img src="./assets/icons/mysql.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">MySQL</h4>
                 </div>
@@ -73,7 +76,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-html5 large-font text-center d-block" />
+                <img src="./assets/icons/html5.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">HTML5</h4>
                 </div>
@@ -83,7 +87,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-css3 large-font text-center d-block" />
+                <img src="./assets/icons/css3.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">CSS3</h4>
                 </div>
@@ -93,7 +98,8 @@ function Skills() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
-                <i className="devicons devicons-bootstrap large-font text-center d-block" />
+                <img src="./assets/icons/bootstrap.svg"
+                  className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">Bootstrap</h4>
                 </div>
