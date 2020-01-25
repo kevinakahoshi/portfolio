@@ -320,6 +320,11 @@ a.decoration-none:hover::after {
   color: #563d7c;
 }
 
+.icon-svg {
+  height: 6rem;
+  width: 6rem;
+}
+
 .contact-general:hover,
 .contact-general:hover>* {
   color: #000000b3;
