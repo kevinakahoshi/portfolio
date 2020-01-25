@@ -21,10 +21,11 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/github.svg"
+                <img alt="GitHub Icon"
+                  src="./assets/icons/github.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
-                  <h4 className="text-center">Github</h4>
+                  <h4 className="text-center">GitHub</h4>
                 </div>
               </CardBody>
             </Card>
@@ -32,7 +33,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/aws.svg"
+                <img alt="Amazon Web Services Icon"
+                  src="./assets/icons/aws.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">AWS</h4>
@@ -43,7 +45,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/npm.svg"
+                <img alt="npm Icon"
+                  src="./assets/icons/npm.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">npm</h4>
@@ -54,7 +57,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/webpack.svg"
+                <img alt="Webpack Icon"
+                  src="./assets/icons/webpack.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Webpack</h4>
@@ -65,7 +69,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/babel.svg"
+                <img alt="Babel Icon"
+                  src="./assets/icons/babel.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Babel</h4>
@@ -76,7 +81,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/apache.svg"
+                <img alt="Apache Icon"
+                  src="./assets/icons/apache.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Apache</h4>
@@ -87,7 +93,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/chrome-dev-tools.svg"
+                <img alt="Chrome Icon"
+                  src="./assets/icons/chrome-dev-tools.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Chrome Dev Tools</h4>
@@ -98,7 +105,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/jira.svg"
+                <img alt="JIRA Icon"
+                  src="./assets/icons/jira.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">JIRA</h4>
@@ -109,7 +117,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/vs-code.svg"
+                <img alt="Visual Studio Icon"
+                  src="./assets/icons/vs-code.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">VS Code</h4>
@@ -120,7 +129,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/figma.svg"
+                <img alt="Figma Icon"
+                  src="./assets/icons/figma.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Figma</h4>
@@ -131,7 +141,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/photoshop.svg"
+                <img alt="Photoshop Icon"
+                  src="./assets/icons/photoshop.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Photoshop</h4>
@@ -142,7 +153,8 @@ function Tools() {
           <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
             <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
               <CardBody>
-                <img src="./assets/icons/slack.svg"
+                <img alt="Slack Icon"
+                  src="./assets/icons/slack.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center">Slack</h4>
