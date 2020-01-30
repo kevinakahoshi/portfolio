@@ -43,10 +43,6 @@ body {
   padding: 5rem 0rem;
 }
 
-.topographic {
-  background: #fff;
-}
-
 .custom-badge {
   background-image: linear-gradient(-45deg, #e64242, #e67442);
   font-weight: 300;
@@ -279,47 +275,6 @@ a.decoration-none:hover::after {
   border-radius: 100px;
 }
 
-.devicons-javascript_badge:before {
-  position: relative;
-  z-index: 2;
-}
-
-.background-test {
-  bottom: 2px;
-  right: 2px;
-  height: 75%;
-  width: 75%;
-  z-index: 1;
-}
-
-.devicons-mysql {
-  color: #00758F;
-}
-
-.devicons-javascript_badge {
-  color: #f7e200;
-}
-
-.devicons-react {
-  color: #61dafb;
-}
-
-.devicons-jquery {
-  color: #0769AD;
-}
-
-.devicons-html5 {
-  color: #ff6421;
-}
-
-.devicons-css3 {
-  color: #006cc0;
-}
-
-.devicons-bootstrap {
-  color: #563d7c;
-}
-
 .icon-svg {
   height: 6rem;
   width: 6rem;
@@ -351,14 +306,6 @@ a.decoration-none:hover::after {
   color: #e64242;
   border-color: #e64242;
   transition: .3s all;
-}
-
-.background-test {
-  background: #000;
-}
-
-.nihon {
-  color: #e64242;
 }
 
 .nihon-background {

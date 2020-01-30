@@ -55,6 +55,14 @@ class Carousel extends React.Component {
     const currentProject = this.props.projects[this.state.currentProject];
     const fade = this.state.fadeOut ? 'fade-out' : 'fade-in';
     const slide = this.state.fadeOut ? 'slide-out-10' : 'slide-in-10';
+    const indicators = this.props.projects.map((project, index) => {
+      return <div key={index}
+        className={`${this.state.currentProject === index ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
+        onClick={() => this.slideChange(index)}
+        onMouseEnter={this.stopTimer}
+        onMouseLeave={this.startTimer}
+        aria-label={`Project ${project.id}`} />;
+    });
     const technologies = currentProject.technologies.map((technology, index) => {
       return <span key={index} className={`badge custom-badge text-white mr-2 ${slide}`}>{technology}</span>;
     });
@@ -76,28 +84,14 @@ class Carousel extends React.Component {
           </div>
           <div className="my-3 d-flex">
             <div className="d-flex">
-              <div className={`${this.state.currentProject === 0 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
-                onClick={() => this.slideChange(0)}
-                onMouseEnter={this.stopTimer}
-                onMouseLeave={this.startTimer}
-                aria-label="First Project" />
-              <div className={`${this.state.currentProject === 1 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
-                onClick={() => this.slideChange(1)}
-                onMouseEnter={this.stopTimer}
-                onMouseLeave={this.startTimer}
-                aria-label="Second Project" />
-              <div className={`${this.state.currentProject === 2 ? 'indicator-active' : 'indicator'} carousel-indicator my-auto pointer`}
-                onClick={() => this.slideChange(2)}
-                onMouseEnter={this.stopTimer}
-                onMouseLeave={this.startTimer}
-                aria-label="Third Project" />
+              {indicators}
             </div>
             <div className="d-flex ml-auto carousel-controls-div">
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-3 rounded"
                 onClick={() => {
                   let nextProject = this.state.currentProject - 1;
-                  if (nextProject === -1) {
-                    nextProject = 2;
+                  if (this.state.currentProject - 1 === -1) {
+                    nextProject = this.props.projects.length - 1;
                   }
                   this.slideChange(nextProject);
                 }}
@@ -107,7 +101,7 @@ class Carousel extends React.Component {
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-0 rounded"
                 onClick={() => {
                   let nextProject = this.state.currentProject + 1;
-                  if (nextProject === 3) {
+                  if (nextProject === this.props.projects.length) {
                     nextProject = 0;
                   }
                   this.slideChange(nextProject);
@@ -120,7 +114,9 @@ class Carousel extends React.Component {
         </Col>
         <Col md="6" sm="12">
           <div className={'d-flex h-100'}>
-            <div className={`m-auto ${slide}`}>
+            <div className={`m-auto ${slide}`}
+              onMouseEnter={this.stopTimer}
+              onMouseLeave={this.startTimer}>
               <h6 className={`h5 smooth-transition ${slide}`}>{currentProject.name}</h6>
               <p className={`smooth-transition ${slide}`}>{currentProject.description}</p>
               <h6 className={`h5 smooth-transition ${slide}`}>Developed Using</h6>

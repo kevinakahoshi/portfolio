@@ -9,7 +9,6 @@ import {
 
 function Skills() {
   return (
-
     <div className="skills-section topographic content-div position-relative" id="skills">
       <Container>
         <Row className="mobile-six-row">

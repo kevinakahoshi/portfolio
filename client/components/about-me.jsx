@@ -65,14 +65,15 @@ function AboutMe() {
             </div>
           </Col>
           <Col md="8">
-            <div className="position-relative d-none d-sm-block">
-              <h3 className="heading mb-4 spread fade-in slide-in-10">About Me</h3>
+            <div className="position-relative d-none d-sm-block slide-in-10">
+              <h3 className="heading mb-4 spread fade-in">About Me</h3>
             </div>
-            <p className="fade-in slide-in-10">I&#39;m Kevin Akahoshi, and I&#39;m a developer that has a passion for technology and coding.</p>
-            <p className="fade-in slide-in-10">I&#39;ve always had an interest in technology, and ever since I can remember I&#39;ve been involved in computers. My first taste of programming came in the form of a few computer science courses at UC Riverside, which gave me some exposure to HTML and a little bit of C++. Through my professional experiences, I continued to find myself drawn to tech.</p>
-            <p className="fade-in slide-in-10">For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that our clients were having with technology. After working around many developers however, I decided to make the jump to fulfill my curiosity, and to pursue programming full time. I enrolled in an accelerated Full-Stack Web Development Program at LearningFuze.</p>
-            <p className="fade-in slide-in-10">While enrolled in the program, I learned languages like JavaScript (ES5 + ES6), React.js, jQuery, Node.js, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/Github, Postman, npm, and Webpack. Lastly, I participated in team-based hackathons, as well as solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to pursue web development, and has helped feed my curiosity.</p>
-            <p className="fade-in slide-in-10">Because I have years of experience working with clients, and seeing things from their point of view, I bring a unique perspective to the conversation. I&#39;m the Account Manager gone rogue.</p>
+            <div className="slide-in-10">
+              <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
+              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that clients were having with technology. Seeing what was possible when building software solutions was inspiring to me. In my free time, I often found myself learning programming fundamentals on sites like Codecademy or Freecodecamp, but coding part-time wasn&#39;t enough. I decided to make the jump to fulfill my curiosity, and to pursue coding full-time.</p>
+              <p>I&#39;ve learned languages like JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to learn to code and to feed my curiosity.</p>
+              <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
+            </div>
           </Col>
         </Row>
       </Container>
