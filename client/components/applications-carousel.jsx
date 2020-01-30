@@ -90,8 +90,8 @@ class Carousel extends React.Component {
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-3 rounded"
                 onClick={() => {
                   let nextProject = this.state.currentProject - 1;
-                  if (nextProject === -1) {
-                    nextProject = 2;
+                  if (this.state.currentProject - 1 === -1) {
+                    nextProject = this.props.projects.length - 1;
                   }
                   this.slideChange(nextProject);
                 }}
@@ -101,7 +101,7 @@ class Carousel extends React.Component {
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-0 rounded"
                 onClick={() => {
                   let nextProject = this.state.currentProject + 1;
-                  if (nextProject === 3) {
+                  if (nextProject === this.props.projects.length) {
                     nextProject = 0;
                   }
                   this.slideChange(nextProject);

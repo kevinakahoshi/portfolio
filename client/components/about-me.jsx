@@ -69,10 +69,10 @@ function AboutMe() {
               <h3 className="heading mb-4 spread fade-in">About Me</h3>
             </div>
             <div className="slide-in-10">
-              <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for technology and coding.</p>
-              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that our clients were having with technology. After working around many developers however, I decided to make the jump to fulfill my curiosity, and to pursue programming full time.</p>
-              <p>I&#39;ve learned languages like JavaScript (ES5 + ES6), React.js, jQuery, Node.js, PHP, HTML, and CSS. I&#39;ve also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to pursue web development, and has helped feed my curiosity.</p>
-              <p>Because I have years of experience working with clients, and seeing things from their point of view, I bring a unique perspective to the conversation. I&#39;m the Account Manager gone rogue.</p>
+              <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
+              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that clients were having with technology. Seeing what was possible when building software solutions was inspiring to me. In my free time, I often found myself learning programming fundamentals on sites like Codecademy or Freecodecamp, but coding part-time wasn&#39;t enough. I decided to make the jump to fulfill my curiosity, and to pursue coding full-time.</p>
+              <p>I&#39;ve learned languages like JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to learn to code and to feed my curiosity.</p>
+              <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
             </div>
           </Col>
         </Row>
