@@ -12,7 +12,7 @@ function AboutMe() {
         <Row>
           <Col md="4">
             <h3 className="heading mb-4 spread d-block d-sm-none text-center fade-in slide-in-10">About Me</h3>
-            <img src="images/portrait.png"
+            <img src="images/portrait-2020.png"
               className="img-fluid fade-in slide-in-10"
               alt="Portrait photo of Kevin Akahoshi with red/orange gradient of topographic pattern in the background" />
             <div className="my-3 d-flex justify-content-center fade-in slide-in-10">
@@ -70,8 +70,8 @@ function AboutMe() {
             </div>
             <div className="slide-in-10">
               <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
-              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that clients were having with technology. Seeing what was possible when building software solutions was inspiring to me. In my free time, I often found myself learning programming fundamentals on sites like Codecademy or Freecodecamp, but coding part-time wasn&#39;t enough. I decided to make the jump to fulfill my curiosity, and to pursue coding full-time.</p>
-              <p>I&#39;ve learned languages like JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to learn to code and to feed my curiosity.</p>
+              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that clients were having with technology. Seeing what was possible when building software solutions was inspiring to me. In my free time, I often found myself learning programming fundamentals on sites like Codecademy or freeCodeCamp, but coding part-time wasn&#39;t enough. I decided to make the jump to fulfill my curiosity, and to pursue coding full-time.</p>
+              <p>I&#39;ve learned languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to learn to code and to feed my curiosity.</p>
               <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
             </div>
           </Col>
