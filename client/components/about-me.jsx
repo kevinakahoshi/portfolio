@@ -65,14 +65,17 @@ function AboutMe() {
             </div>
           </Col>
           <Col md="8">
-            <div className="position-relative d-none d-sm-block slide-in-10">
-              <h3 className="heading mb-4 spread fade-in">About Me</h3>
-            </div>
-            <div className="slide-in-10">
-              <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
-              <p>For the last four years, I&#39;ve worked as an Account Manager in various organizations to help solve problems that clients were having with technology. Seeing what was possible when building software solutions was inspiring to me. In my free time, I often found myself learning programming fundamentals on sites like Codecademy or freeCodeCamp, but coding part-time wasn&#39;t enough. I decided to make the jump to fulfill my curiosity, and to pursue coding full-time.</p>
-              <p>I&#39;ve learned languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I also became intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications. Experiencing all of this has solidified that I have made the right decision to learn to code and to feed my curiosity.</p>
-              <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
+            <div className="d-flex h-100">
+              <div className="m-auto">
+                <div className="position-relative d-none d-sm-block slide-in-10">
+                  <h3 className="heading mb-4 spread fade-in">About Me</h3>
+                </div>
+                <div className="slide-in-10">
+                  <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
+                  <p>I&#39;m skilled in languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I&#39;m intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications.</p>
+                  <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
+                </div>
+              </div>
             </div>
           </Col>
         </Row>
