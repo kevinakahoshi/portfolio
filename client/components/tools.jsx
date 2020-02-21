@@ -2,14 +2,72 @@ import React from 'react';
 import {
   Container,
   Row,
-  Col,
-  Card,
-  CardBody
+  Col
 } from 'reactstrap';
+import InfoCard from './info-card';
 
 function Tools() {
-  return (
+  const tools = [
+    {
+      name: 'GitHub',
+      logo: '/assets/icons/github.svg'
+    },
+    {
+      name: 'AWS',
+      logo: '/assets/icons/aws.svg'
+    },
+    {
+      name: 'npm',
+      logo: '/assets/icons/npm.svg'
+    },
+    {
+      name: 'Webpack',
+      logo: '/assets/icons/webpack.svg'
+    },
+    {
+      name: 'Babel',
+      logo: '/assets/icons/babel.svg'
+    },
+    {
+      name: 'Apache',
+      logo: '/assets/icons/apache.svg'
+    },
+    {
+      name: 'Chrome Dev Tools',
+      logo: '/assets/icons/chrome-dev-tools.svg'
+    },
+    {
+      name: 'JIRA',
+      logo: '/assets/icons/jira.svg'
+    },
+    {
+      name: 'VS Code',
+      logo: '/assets/icons/vs-code.svg'
+    },
+    {
+      name: 'Figma',
+      logo: '/assets/icons/figma.svg'
+    },
+    {
+      name: 'Photoshop',
+      logo: '/assets/icons/photoshop.svg'
+    },
+    {
+      name: 'Slack',
+      logo: '/assets/icons/slack.svg'
+    }
+  ];
 
+  const toolCards = tools.map((tool, index) => {
+    return (
+      <InfoCard key={index}
+        logo={tool.logo}
+        name={tool.name}
+        classes={'shadow-none bg-transparent text-white'} />
+    );
+  });
+
+  return (
     <div className="tools-section nihon-background content-div topographic-2" id="tools">
       <Container>
         <Row className="mobile-six-row">
@@ -18,150 +76,7 @@ function Tools() {
               <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
             </div>
           </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="GitHub Icon"
-                  src="./assets/icons/github.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">GitHub</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Amazon Web Services Icon"
-                  src="./assets/icons/aws.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">AWS</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="npm Icon"
-                  src="./assets/icons/npm.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">npm</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Webpack Icon"
-                  src="./assets/icons/webpack.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Webpack</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Babel Icon"
-                  src="./assets/icons/babel.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Babel</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Apache Icon"
-                  src="./assets/icons/apache.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Apache</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Chrome Icon"
-                  src="./assets/icons/chrome-dev-tools.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Chrome Dev Tools</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="JIRA Icon"
-                  src="./assets/icons/jira.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">JIRA</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Visual Studio Icon"
-                  src="./assets/icons/vs-code.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">VS Code</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Figma Icon"
-                  src="./assets/icons/figma.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Figma</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Photoshop Icon"
-                  src="./assets/icons/photoshop.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Photoshop</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
-          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
-            <Card className="h-100 shadow-none slide-in-10 bg-transparent text-white">
-              <CardBody>
-                <img alt="Slack Icon"
-                  src="./assets/icons/slack.svg"
-                  className="icon-svg d-block m-auto" />
-                <div className="my-3">
-                  <h4 className="text-center">Slack</h4>
-                </div>
-              </CardBody>
-            </Card>
-          </Col>
+          {toolCards}
         </Row>
       </Container>
     </div>
