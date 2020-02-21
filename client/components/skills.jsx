@@ -57,10 +57,46 @@ function Skills() {
             <Card className="h-100 skills-card slide-in-10">
               <CardBody>
                 <img alt="PHP Icon"
+                  src="./assets/icons/node-js.svg"
+                  className="icon-svg d-block m-auto" />
+                <div className="my-3">
+                  <h4 className="text-center h5">Node.js</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 skills-card slide-in-10">
+              <CardBody>
+                <img alt="PHP Icon"
+                  src="./assets/icons/express.svg"
+                  className="icon-svg d-block m-auto" />
+                <div className="my-3">
+                  <h4 className="text-center h5">Express</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 skills-card slide-in-10">
+              <CardBody>
+                <img alt="PHP Icon"
                   src="./assets/icons/php.svg"
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">PHP</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 skills-card slide-in-10">
+              <CardBody>
+                <img alt="PHP Icon"
+                  src="./assets/icons/postgresql.svg"
+                  className="icon-svg d-block m-auto" />
+                <div className="my-3">
+                  <h4 className="text-center h5">PostgreSQL</h4>
                 </div>
               </CardBody>
             </Card>
@@ -109,6 +145,18 @@ function Skills() {
                   className="icon-svg d-block m-auto" />
                 <div className="my-3">
                   <h4 className="text-center h5">Bootstrap</h4>
+                </div>
+              </CardBody>
+            </Card>
+          </Col>
+          <Col lg="3" md="4" sm="6" className="p-sm-3 mobile-six-card">
+            <Card className="h-100 skills-card slide-in-10">
+              <CardBody>
+                <img alt="PHP Icon"
+                  src="./assets/icons/material-ui.svg"
+                  className="icon-svg d-block m-auto" />
+                <div className="my-3">
+                  <h4 className="text-center h5">Material UI</h4>
                 </div>
               </CardBody>
             </Card>
