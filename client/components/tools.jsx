@@ -5,6 +5,7 @@ import {
   Col
 } from 'reactstrap';
 import InfoCard from './info-card';
+import LazyLoad from 'react-lazy-load';
 
 function Tools() {
   const tools = [
@@ -68,18 +69,22 @@ function Tools() {
   });
 
   return (
-    <div className="tools-section nihon-background content-div topographic-2" id="tools">
-      <Container>
-        <Row className="mobile-six-row">
-          <Col xs="12">
-            <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
-            </div>
-          </Col>
-          {toolCards}
-        </Row>
-      </Container>
-    </div>
+    <LazyLoad
+      debounce={false}
+      offsetVertical={350}>
+      <div className="tools-section nihon-background content-div topographic-2" id="tools">
+        <Container>
+          <Row className="mobile-six-row">
+            <Col xs="12">
+              <div className="heading-div position-relative m-auto">
+                <h3 className="text-center heading mb-4 text-white spread slide-in">Tools</h3>
+              </div>
+            </Col>
+            {toolCards}
+          </Row>
+        </Container>
+      </div>
+    </LazyLoad>
   );
 }
 

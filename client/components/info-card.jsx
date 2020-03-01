@@ -4,6 +4,7 @@ import {
   Card,
   CardBody
 } from 'reactstrap';
+import LazyLoad from 'react-lazy-load';
 
 function InfoCard(props) {
   return (
@@ -13,9 +14,13 @@ function InfoCard(props) {
       className="p-sm-3 mobile-six-card">
       <Card className={`h-100 skills-card slide-in-10 ${props.classes}`}>
         <CardBody>
-          <img alt="JavaScript Icon"
-            src={props.logo}
-            className="icon-svg d-block m-auto" />
+          <LazyLoad
+            debounce={false}
+            offsetVertical={350}>
+            <img alt="JavaScript Icon"
+              src={props.logo}
+              className="icon-svg d-block m-auto" />
+          </LazyLoad>
           <div className="my-3">
             <h4 className="text-center h5">{props.name}</h4>
           </div>

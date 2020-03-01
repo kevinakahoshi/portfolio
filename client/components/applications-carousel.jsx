@@ -3,6 +3,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import LazyLoad from 'react-lazy-load';
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -74,12 +75,16 @@ class Carousel extends React.Component {
               target="_blank"
               rel="noopener noreferrer"
               className="pointer decoration-none position-relative">
-              <img
-                src={currentProject.image}
-                alt={currentProject.alt}
-                className={`img-fluid border rounded smooth-transition ${fade}`}
-                onMouseEnter={this.stopTimer}
-                onMouseLeave={this.startTimer} />
+              <LazyLoad
+                debounce={false}
+                offsetVertical={350}>
+                <img
+                  src={currentProject.image}
+                  alt={currentProject.alt}
+                  className={`img-fluid border rounded smooth-transition ${fade}`}
+                  onMouseEnter={this.stopTimer}
+                  onMouseLeave={this.startTimer} />
+              </LazyLoad>
             </a>
           </div>
           <div className="my-3 d-flex">
