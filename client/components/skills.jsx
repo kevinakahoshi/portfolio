@@ -5,6 +5,7 @@ import {
   Col
 } from 'reactstrap';
 import InfoCard from './info-card';
+import LazyLoad from 'react-lazy-load';
 
 function Skills() {
   const skills = [
@@ -67,19 +68,23 @@ function Skills() {
   });
 
   return (
-    <div className="skills-section topographic content-div position-relative"
-      id="skills">
-      <Container>
-        <Row className="mobile-six-row">
-          <Col xs="12">
-            <div className="heading-div position-relative m-auto">
-              <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>
-            </div>
-          </Col>
-          {skillCards}
-        </Row>
-      </Container>
-    </div>
+    <LazyLoad
+      debounce={false}
+      offsetVertical={350}>
+      <div className="skills-section topographic content-div position-relative"
+        id="skills">
+        <Container>
+          <Row className="mobile-six-row">
+            <Col xs="12">
+              <div className="heading-div position-relative m-auto">
+                <h3 className="text-center heading mb-4 spread slide-in">Technical Skills</h3>
+              </div>
+            </Col>
+            {skillCards}
+          </Row>
+        </Container>
+      </div>
+    </LazyLoad>
   );
 }
 

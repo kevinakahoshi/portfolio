@@ -4,6 +4,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import LazyLoad from 'react-lazy-load';
 
 function AboutMe() {
   return (
@@ -12,9 +13,13 @@ function AboutMe() {
         <Row>
           <Col md="4">
             <h3 className="heading mb-4 spread d-block d-sm-none text-center fade-in slide-in-10">About Me</h3>
-            <img src="images/portrait-2020.png"
-              className="img-fluid fade-in slide-in-10"
-              alt="Portrait photo of Kevin Akahoshi with red/orange gradient of topographic pattern in the background" />
+            <LazyLoad
+              debounce={false}
+              offsetVertical={500}>
+              <img src="images/portrait-2020.png"
+                className="img-fluid fade-in slide-in-10"
+                alt="Portrait photo of Kevin Akahoshi with red/orange gradient of topographic pattern in the background" />
+            </LazyLoad>
             <div className="my-3 d-flex justify-content-center fade-in slide-in-10">
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"

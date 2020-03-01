@@ -4,6 +4,7 @@ import {
   Row,
   Col
 } from 'reactstrap';
+import LazyLoad from 'react-lazy-load';
 
 function Hero() {
   return (
@@ -21,10 +22,14 @@ function Hero() {
           </Col>
           <Col md="6"
             className="p-0 order-1 order-sm-2">
-            <img
-              src="/images/apps-resize.jpg"
-              className="hero-image fade-in slide-in-10"
-              alt="Mocks of the different apps made on mobile phones." />
+            <LazyLoad
+              debounce={false}
+              offsetVertical={350}>
+              <img
+                src="/images/apps-resize.jpg"
+                className="hero-image fade-in slide-in-10"
+                alt="Mocks of the different apps made on mobile phones." />
+            </LazyLoad>
           </Col>
         </Row>
       </Container>
