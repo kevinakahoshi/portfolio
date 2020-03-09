@@ -3,7 +3,6 @@ import {
   Row,
   Col
 } from 'reactstrap';
-import LazyLoad from 'react-lazy-load';
 
 function Grid(props) {
   return (
@@ -32,13 +31,9 @@ function getProjects(projectsArray) {
               target="_blank"
               rel="noopener noreferrer"
               className="pointer decoration-none position-relative">
-              <LazyLoad
-                debounce={false}
-                offsetVertical={350}>
-                <img src={project.image}
-                  className="img-fluid border rounded mb-3"
-                  alt={project.alt} />
-              </LazyLoad>
+              <img src={project.image}
+                className="img-fluid border rounded mb-3"
+                alt={project.alt} />
             </a>
             <h5 className="text-center mb-3">{project.name}</h5>
             <div className="mb-3">
