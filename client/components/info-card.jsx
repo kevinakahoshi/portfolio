@@ -16,6 +16,7 @@ function InfoCard(props) {
         <CardBody>
           <LazyLoad
             debounce={false}
+            height={96}
             offsetVertical={350}>
             <img alt="JavaScript Icon"
               src={props.logo}
