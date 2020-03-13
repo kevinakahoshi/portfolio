@@ -59,7 +59,7 @@ function Contact(props) {
               <a href="https://github.com/kevinakahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-github pointer m-auto"
+                className="decoration-none default-color contact-general pointer m-auto"
                 aria-label="Github">
                 <div className="border-div d-flex">
                   <i className="fab fa-github medium-font m-auto" />
@@ -68,7 +68,7 @@ function Contact(props) {
               <a href="https://www.linkedin.com/in/kevin-akahoshi/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="decoration-none default-color contact-linkedin pointer mx-4 my-auto"
+                className="decoration-none default-color contact-general pointer mx-4 my-auto"
                 aria-label="LinkedIn">
                 <div className="border-div d-flex">
                   <i className="fab fa-linkedin medium-font m-auto" />

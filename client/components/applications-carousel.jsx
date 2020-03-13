@@ -133,7 +133,7 @@ class Carousel extends React.Component {
                   className={'py-2 mr-3 icon-active'}
                   rel="noopener noreferrer"
                   target="_blank">
-                  <i className="fab fa-github mr-2 icon-active"/>Github
+                  <i className="fab fa-github mr-2 icon-active"/>GitHub
                 </a>|
                 <a href={currentProject.live}
                   className={'py-2 ml-3 icon-active'}

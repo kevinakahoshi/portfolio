@@ -290,27 +290,6 @@ a.decoration-none:hover::after {
   transition: .3s all;
 }
 
-.contact-github:hover,
-.contact-github:hover > * {
-  color: #000000;
-  border-color: #000000;
-  transition: .3s all;
-}
-
-.contact-linkedin:hover,
-.contact-linkedin:hover > * {
-  color: #0073b1;
-  border-color: #0073b1;
-  transition: .3s all;
-}
-
-.contact-resume:hover,
-.contact-resume:hover > * {
-  color: #e64242;
-  border-color: #e64242;
-  transition: .3s all;
-}
-
 .nihon-background {
   background: linear-gradient(-45deg, #e64242, #e67442);
 }

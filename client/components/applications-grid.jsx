@@ -49,7 +49,7 @@ function getProjects(projectsArray) {
               target="_blank"
               rel="noopener noreferrer"
               href={project.github}>
-              <i className="fab fa-github mr-2" />Github</a>
+              <i className="fab fa-github mr-2" />GitHub</a>
             <a className="btn btn-share default-nav decoration-none fade-in slide-in"
               target="_blank"
               rel="noopener noreferrer"
