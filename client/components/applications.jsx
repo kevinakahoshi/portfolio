@@ -78,10 +78,7 @@ class Applications extends React.Component {
     return (
       <div className="applications-section bg-white"
         id="applications">
-        <Container
-          // fluid
-          // className="w-75"
-        >
+        <Container>
           <Row>
             <Col xs="12">
               <h3 className="text-center heading mb-4 spread slide-in-10">Applications</h3>
