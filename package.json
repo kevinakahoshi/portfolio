@@ -22,6 +22,7 @@
   "dependencies": {
     "bootstrap": "^4.4.1",
     "devicons": "^1.8.0",
+    "minimist": "^1.2.5",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-lazy-load": "^3.0.13",
