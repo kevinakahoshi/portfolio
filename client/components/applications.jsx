@@ -17,26 +17,36 @@ class Applications extends React.Component {
       projects: [
         {
           id: 1,
+          image: '/images/beacon-daily-carousel.jpg',
+          alt: 'Topographic map pattern with text that says Beacon Daily',
+          name: 'Beacon Daily',
+          technologies: ['React.js', 'React Hooks', 'React Router', 'Node.js', 'Express', 'PostgreSQL', 'Material UI', 'HTML', 'CSS'],
+          description: 'Beacon Daily is a simple and modern looking full-stack CRUD app for task tracking.  Users can create new checklist items, view complete or incomplete checklist items, update tasks with new information, and delete both complete or incomplete checklist items.',
+          github: 'https://github.com/kevinakahoshi/beacon-daily',
+          live: 'https://beacon-daily.kevinakahoshi.com/'
+        },
+        {
+          id: 2,
           image: '/images/spontaneously-carousel.jpg',
           alt: 'Man on skateboard with colorful powder going everywhere and text overlay that says Spontaneous.ly',
           name: 'Spontaneous.ly',
           description: 'Spontaneous.ly is a full stack application for users that want to embark on a spontaneous adventure.  Users can enter their zipcode, add filtering for results, and choose activities based on the returned results.  By attending activities, users will gain points, as well as see the other users attending the activity.  If users don\'t like the activities they are presented, they have the option to spend their points to go back to the filtering screen, or cancel their reservation for a given activity',
-          technologies: ['React.js', 'React Router', 'JavaScript', 'HTML', 'CSS', 'PHP', 'MySQL'],
+          technologies: ['React.js', 'React Router', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap', 'HTML', 'CSS'],
           github: 'https://github.com/kevinakahoshi/spontaneous.ly',
           live: 'https://spontaneouslyapp.com/'
         },
         {
-          id: 2,
+          id: 3,
           image: '/images/coffeine-carousel.jpg',
           alt: 'Coffee bean roasting machine filled with fresh coffee beans with a text overlay that says Coffeine Supply Co.',
           name: 'Coffeine Supply Co',
           description: 'Coffeine Supply Co is a full stack application developed for coffee lovers interested in coffee supplies.  Users can add coffee related products to their cart, view or edit their cart, and go through the checkout process like a real e-commerce webstore.',
-          technologies: ['React.js', 'JavaScript', 'HTML', 'CSS', 'PHP', 'MySQL'],
+          technologies: ['React.js', 'JavaScript', 'PHP', 'MySQL', 'Bootstrap', 'HTML', 'CSS'],
           github: 'https://github.com/kevinakahoshi/coffeine-supply-co',
           live: 'https://coffeine.kevinakahoshi.com/'
         },
         {
-          id: 3,
+          id: 4,
           image: '/images/cyberpunk-carousel.jpg',
           alt: 'Slightly blurred background of a digital interface with a text overlay that says Cyberpunk Logo Match',
           name: 'Cyberpunk Logo Match',

@@ -1,15 +1,17 @@
 import React from 'react';
 import {
   Row,
-  Col
+  Col,
+  Card,
+  CardBody,
+  CardFooter
 } from 'reactstrap';
 
 function Grid(props) {
   return (
-    <Row>
-      <div className="card-group">
-        {getProjects(props.projects)}
-      </div>
+    <Row
+      className="row-cols-1 row-cols-md-2 row-cols-lg-3">
+      {getProjects(props.projects)}
     </Row>
   );
 }
@@ -19,14 +21,11 @@ export default Grid;
 function getProjects(projectsArray) {
   return projectsArray.map((project, index) => {
     return (
-      <Col lg="4"
-        md="6"
-        sm="12"
-        key={index}
-        className="mb-3">
-        <div
-          className="card rounded border mb-3 h-100 slide-in-10">
-          <div className="card-body">
+      <Col key={index}
+        className="mb-4">
+        <Card className="h-100 rounded border slide-in-10">
+          <CardBody
+            className="p-3">
             <a href={project.live}
               target="_blank"
               rel="noopener noreferrer"
@@ -35,16 +34,18 @@ function getProjects(projectsArray) {
                 className="img-fluid border rounded mb-3"
                 alt={project.alt} />
             </a>
-            <h5 className="text-center mb-3">{project.name}</h5>
-            <div className="mb-3">
-              <p className="">{truncateDescription(project.description, index)}</p>
-            </div>
+            <h5 className="text-center mb-3">
+              {project.name}
+            </h5>
+            <p className="mb-3">
+              {truncateDescription(project.description, project.name)}
+            </p>
             <h6 className="mb-3">Developed Using</h6>
             <div className="d-flex align-content-start flex-wrap w-100">
               {getTechnologies(project.technologies)}
             </div>
-          </div>
-          <div className="mt-3 card-footer bg-white">
+          </CardBody>
+          <CardFooter className="bg-white p-3">
             <a className="btn btn-share default-nav decoration-none fade-in slide-in mr-3"
               target="_blank"
               rel="noopener noreferrer"
@@ -55,19 +56,19 @@ function getProjects(projectsArray) {
               rel="noopener noreferrer"
               href={project.live}>
               <i className="far fa-window-restore mr-2" />Live</a>
-          </div>
-        </div>
+          </CardFooter>
+        </Card>
       </Col>
     );
   });
 }
 
-function truncateDescription(description, index) {
-  if (index > 0) {
+function truncateDescription(description, name) {
+  if (name !== 'Spontaneous.ly') {
     const firstPeriod = description.indexOf('.');
     return description.slice(0, firstPeriod + 1);
   } else {
-    return `${description.split('.', 2).join('.')}.`;
+    return description.split('.', 2).join('.');
   }
 }
 
