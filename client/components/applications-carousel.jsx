@@ -22,7 +22,7 @@ class Carousel extends React.Component {
   startTimer() {
     this.stopTimer();
     let position = this.state.currentProject + 1;
-    if (position === this.props.projects.length) {
+    if (!this.props.projects[position] || !this.props.projects[position].description) {
       position = 0;
     }
     this.interval = setInterval(() => this.slideChange(position), 9500);
@@ -57,12 +57,14 @@ class Carousel extends React.Component {
     const fade = this.state.fadeOut ? 'fade-out' : 'fade-in';
     const slide = this.state.fadeOut ? 'slide-out-10' : 'slide-in-10';
     const indicators = this.props.projects.map((project, index) => {
-      return <div key={index}
-        className={`${this.state.currentProject === index ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
-        onClick={() => this.slideChange(index)}
-        onMouseEnter={this.stopTimer}
-        onMouseLeave={this.startTimer}
-        aria-label={`Project ${project.id}`} />;
+      if (project.description) {
+        return <div key={index}
+          className={`${this.state.currentProject === index ? 'indicator-active' : 'indicator'} carousel-indicator my-auto mr-3 pointer`}
+          onClick={() => this.slideChange(index)}
+          onMouseEnter={this.stopTimer}
+          onMouseLeave={this.startTimer}
+          aria-label={`Project ${project.id}`} />;
+      }
     });
     const technologies = currentProject.technologies.map((technology, index) => {
       return <span key={index} className={`badge custom-badge text-white mr-2 ${slide}`}>{technology}</span>;
@@ -98,6 +100,13 @@ class Carousel extends React.Component {
                   if (this.state.currentProject - 1 === -1) {
                     nextProject = this.props.projects.length - 1;
                   }
+
+                  if (!this.props.projects[nextProject].description) {
+                    while (!this.props.projects[nextProject].description) {
+                      nextProject--;
+                    }
+                  }
+
                   this.slideChange(nextProject);
                 }}
                 aria-label="Previous" >
@@ -106,7 +115,7 @@ class Carousel extends React.Component {
               <button className="carousel-button smooth-transition pointer bg-white d-flex mr-0 rounded"
                 onClick={() => {
                   let nextProject = this.state.currentProject + 1;
-                  if (nextProject === this.props.projects.length) {
+                  if (!this.props.projects[nextProject] || !this.props.projects[nextProject].description) {
                     nextProject = 0;
                   }
                   this.slideChange(nextProject);
