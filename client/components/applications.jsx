@@ -54,6 +54,26 @@ class Applications extends React.Component {
           description: 'Cyberpunk Logo Match is a memory matching game based on the dystopian future.  Users need to match corporate sponsor logos in under 60 seconds with above 50% accuracy to avoid being infected with malicious software.',
           github: 'https://github.com/kevinakahoshi/cyberpunk-logo-match',
           live: 'https://cyberpunk.kevinakahoshi.com/'
+        },
+        {
+          id: 5,
+          image: '/images/blank.png',
+          alt: '',
+          name: 'Coming Soon',
+          technologies: [],
+          description: '',
+          github: '',
+          live: ''
+        },
+        {
+          id: 6,
+          image: '/images/blank.png',
+          alt: '',
+          name: 'Coming Soon',
+          technologies: [],
+          description: '',
+          github: '',
+          live: ''
         }
       ]
     };
