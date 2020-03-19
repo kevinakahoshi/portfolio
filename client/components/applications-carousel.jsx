@@ -22,7 +22,7 @@ class Carousel extends React.Component {
   startTimer() {
     this.stopTimer();
     let position = this.state.currentProject + 1;
-    if (position === 3) {
+    if (position === this.props.projects.length) {
       position = 0;
     }
     this.interval = setInterval(() => this.slideChange(position), 9500);
