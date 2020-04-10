@@ -349,6 +349,11 @@ a.decoration-none:hover::after {
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-name: shimmer;
   -webkit-animation-timing-function: linear;
+  animation-duration: 5s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
   background: #f8f8f8;
   background-image: linear-gradient(to right, #f8f8f8 0%, #eeeeee 15%, #f8f8f8 30%, #f8f8f8 100%);
 }
