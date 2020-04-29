@@ -76,7 +76,7 @@ function AboutMe() {
                   <h3 className="heading mb-4 spread fade-in">About Me</h3>
                 </div>
                 <div className="slide-in-10">
-                  <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for coding.</p>
+                  <p>I&#39;m Kevin Akahoshi, and I&#39;m a Software Engineer that has a passion for technology, coding, and a great cup of coffee.</p>
                   <p>I&#39;m skilled in languages such as JavaScript (ES5 + ES6), React.js, jQuery, Node.js, Express, PHP, HTML, and CSS. I&#39;m intimately familiar with tools like Git/GitHub, Postman, npm, and Webpack. Lastly, I&#39;ve participated in team-based hackathons, as well as some solo projects, to build full-stack web applications.</p>
                   <p>What got me interested in coding initially was the ability to build cool things, but what keeps me going is that I can create software from nothing that solves real problems.</p>
                 </div>
