@@ -7,7 +7,8 @@ import {
 
 function BlankCard(props) {
   return (
-    <Card className="h-100 rounded border slide-in-10 d-none d-lg-flex">
+    <Card className="h-100 rounded border slide-in-10 d-none d-lg-flex"
+      style={{ animationDelay: props.delay + 'ms' }}>
       <CardBody
         className="p-3">
         <div className="border rounded shimmer-background overflow-hidden">
