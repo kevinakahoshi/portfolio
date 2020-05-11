@@ -18,15 +18,19 @@ function Grid(props) {
 export default Grid;
 
 function getProjects(projectsArray) {
+  let delay = 0;
   return projectsArray.map((project, index) => {
+    delay += 100;
     return (
       <Col key={index}
         className="mb-4">
         {project.description
           ? <ProjectCard project={project}
+            delay={delay}
             truncateDescription={truncateDescription}
             getTechnologies={getTechnologies} />
-          : <BlankCard project={project} />}
+          : <BlankCard project={project}
+            delay={delay} />}
       </Col>
     );
   });
@@ -37,7 +41,7 @@ function truncateDescription(description, name) {
     const firstPeriod = description.indexOf('.');
     return description.slice(0, firstPeriod + 1);
   } else {
-    return description.split('.', 2).join('.');
+    return description.split('.', 2).join('.') + '.';
   }
 }
 

@@ -315,32 +315,32 @@ a.decoration-none:hover::after {
 
 .fade-in {
   animation: fade-in .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .fade-out {
   animation: fade-out .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .slide-in {
   animation: slide-in .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .slide-out {
   animation: slide-out .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .slide-in-10 {
   animation: slide-in-10 .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .slide-out-10 {
   animation: slide-out-10 .75s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 .shimmer {
