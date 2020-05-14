@@ -25,7 +25,7 @@ function ProjectCard(props) {
         <p className="mb-3">
           {props.truncateDescription(props.project.description, props.project.name)}
         </p>
-        <h6 className="mb-3">Developed Using</h6>
+        <h6 className="text-center mb-3">Developed Using</h6>
         <div className="d-flex align-content-start flex-wrap w-100">
           {props.getTechnologies(props.project.technologies)}
         </div>
