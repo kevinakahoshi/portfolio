@@ -21,7 +21,7 @@ class Applications extends React.Component {
           alt: 'Man working on car with text that says Hi-Tech Auto',
           name: 'Hi-Tech Auto',
           technologies: ['Gatsby.js', 'React.js', 'React Hooks', 'GraphQL', 'Reactstrap', 'Bootstrap', 'HTML', 'CSS'],
-          description: 'Hi-Tech Auto is a static informational website that I created for my father-in-law\'s mechanic shop.  This site provides users with information about the shop, the best ways to contact my father-in-law, services offered, and operating hours.',
+          description: 'Hi-Tech Auto is a static informational website that I created for a small independent mechanic shop.  This site provides users with general information about the shop, the best ways to contact the shop, services offered, and operating hours.',
           github: 'https://github.com/kevinakahoshi/hi-tech-auto',
           live: 'https://hitechauto.us/'
         },
